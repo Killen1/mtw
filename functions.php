@@ -23,8 +23,8 @@ function organizedthemes_browser_body_class($classes) {
     }
     elseif($is_IE)
     {  
-		$classes[] = 'ie';
-	}
+	$classes[] = 'ie';
+    }
     else
     {            
     	$classes[] = 'unknown';
