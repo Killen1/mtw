@@ -4,7 +4,7 @@
  * @subpackage Default_Theme
  */
 
-//Add borwser class so we can style according to browser
+//Add borwser class so we can style according to browser comment
 function organizedthemes_browser_body_class($classes) {
  
     global $is_gecko, $is_IE, $is_safari, $is_chrome;
