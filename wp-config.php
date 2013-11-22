@@ -22,14 +22,14 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
 } else {
  
   // Live Server Database Settings
-  define( 'DB_NAME',     'may1330002204587');
-  define( 'DB_USER',     'may1330002204587');
-  define( 'DB_PASSWORD', 'Maynard12!' );
-  define( 'DB_HOST',     'may1330002204587.db.12035906.hostedresource.com'  );
+  define( 'DB_NAME',     '');
+  define( 'DB_USER',     '');
+  define( 'DB_PASSWORD', '' );
+  define( 'DB_HOST',     ''  );
   
   // Overwrites the database to save keep edeting the DB
-  define('WP_HOME','http://maynardandthewalnut.com');
-  define('WP_SITEURL','http://maynardandthewalnut.com');
+  define('WP_HOME','');
+  define('WP_SITEURL','');
   
   // Turn Debug off on live server
   define('WP_DEBUG', false);
