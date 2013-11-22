@@ -3,7 +3,7 @@
  * @package WordPress
  * @subpackage Default_Theme
  */
-//variables set for the site to use 666666666
+//variables set for the site to use
  define( 'SITE_ROOT', get_option('home') . '/wp-content/themes/mtw/' );
  define( 'MTW_ROOT', 'http://www.maynardandthewalnut.com' ); 
  define('SITE_HOME', get_option('home') );
