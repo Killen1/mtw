@@ -5,7 +5,7 @@
  */
 //variables set for the site to use
  define( 'SITE_ROOT', get_option('home') . '/wp-content/themes/mtw/' );
- define( 'MTW_ROOT', 'http://www.maynardandthewalnut.com' ); 
+ define( 'MTW_ROOT', 'http://localhost:8888/wordpress/' ); 
  define('SITE_HOME', get_option('home') );
 
 ?>
@@ -13,6 +13,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>style.css">
+<link rel="stylesheet" href="<?php echo SITE_ROOT ?>gigpress.css">
 <link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <script src="<?php echo SITE_ROOT ?>js/jquery-1.10.2.min.js"></script> 
@@ -58,10 +59,10 @@
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav">
 							<li <?php if ( is_home() ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>">Home</a></li>
-							<li <?php if ( is_page('music') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>/music">Music</a></li>
-							<li <?php if ( is_page('shows') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>/shows">Shows</a></li>
-							<li><a href="#">Gallery</a></li>
-							<li <?php if ( is_page('contact') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>/contact">Contact</a></li>
+							<li <?php if ( is_page('music') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>music">Music</a></li>
+							<li <?php if ( is_page('shows') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>shows">Shows</a></li>
+							<li <?php if ( is_page('gallery') ) {echo " class=\"active\"";}?>><a href="#">Gallery</a></li>
+							<li <?php if ( is_page('contact') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>contact">Contact</a></li>
 							<li><a href="#">The Band</a></li>
 						</ul>
 					</div>

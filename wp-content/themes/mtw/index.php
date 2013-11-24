@@ -33,38 +33,17 @@
 			<?php endif; ?>
 			<?php wp_reset_query(); ?>
 			<!--Loop Goes here-->
-			<?php
-				
-			?>
-			<?php// if( $shows->have_posts()): ?>
- 			<?php// global $post; ?>
-	    	<?php// foreach( $shows as $post ): ?>
-		        <?php// setup_postdata($post); ?>
-				<div class="col-sm-12 col-md-4 col-lg-6">
-					<div class="tour">
-						<div class="row">
-							<div class="col-xs-12">
-								<h2>Upcoming Shows</h2>
-							</div>
-						</div>
-						<div class="event-date row ">
-							<div class="col-xs-4">
-								<div class="date">
-									<h3>Dec. 15th</h3>
-								</div>
-							</div>
-							<div class="col-xs-8">
-								<div class="event-content">
-									<h5><a href="#">Venue Name</a></h5>
-									<h6>City, State</h6>
-									<p><a href="#">Tickets</a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			<?php// endforeach;?>
-			<?php// endif;?>
+			<h2>Upcoming Shows</h2>
+			<?php if(gigpress_has_upcoming()) : ?>
+				<?php
+				    $options = array(
+				    	'scope' => 'upcoming', 
+				    	'limit' => 4);
+				    echo gigpress_shows($options);
+				?>
+			<?else:?>
+			Sorry, We have no upcoming shows.
+			<?php endif; ?>
 			<!--Loop Ends here-->
 		</div>
 	</div>

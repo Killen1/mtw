@@ -1,4 +1,3 @@
-
 <?php
 /**
  * The base configurations of the WordPress.
@@ -15,20 +14,18 @@
  * @package WordPress
  */
 
-// Local server settings
-
-// Local Database
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
 define('DB_NAME', 'mtw');
+
+/** MySQL database username */
 define('DB_USER', 'root');
+
+/** MySQL database password */
 define('DB_PASSWORD', 'root');
+
+/** MySQL hostname */
 define('DB_HOST', 'localhost');
-
-// Overwrites the database to save keep edeting the DB
-define('WP_HOME','http://client.website.dev');
-define('WP_SITEURL','http://client.website.dev');
-
-// Turn on debug for local environment
-define('WP_DEBUG', true);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -45,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '?n`>xv)sP,723k|QqZP:+5}]tUI-J-}kXj;#8D_Hi]W#4cW|/[fHd1-uJ6&z/~[8');
+define('SECURE_AUTH_KEY',  '.T^JvGGsxvKFT1]RS$p7bF[gR,v~4}=;Z10P-oa|(&7{ffl6I-lvsby7rE>Uw1DK');
+define('LOGGED_IN_KEY',    'NX?DKv:ZGee~e9{? gf0m>JPU9YA:t0vVnU0-Uo^C~ADz,#2f&*cTY&4r)[_k%y&');
+define('NONCE_KEY',        ',;@&^7yFeYf^-ui9M8_*KQ(3<T[ReEtU)hnTW;D!Hs-]<NN06-$7i0$Ti-V*QOOP');
+define('AUTH_SALT',        'FP!gt9kruUwU9?Bs@3L@HkIr%z`sp,Vb%dUB7f(f%ip<-k4z^8]o|*c(px(ar1!0');
+define('SECURE_AUTH_SALT', 'GETy)OqV|& [m`CZ^c,qR(C}ou{ryn4`;cc6`Bc]2A9oG)6aVT9bX$1Y-o32QS-)');
+define('LOGGED_IN_SALT',   '1[ ~X]4z-XGWm.[9|K7%D:*e9nt%?P9$:c#_A1%,2LzQ2<[KYS-9MiXO34Vj^ImE');
+define('NONCE_SALT',       '4=B|It<P-$|+a:MPhvZ5hPM((&HQFn9fg|EXyC@*uE+7(Klr-51Qh.Ir8>.PP4!D');
 
 /**#@-*/
 
@@ -81,7 +78,9 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
+define('WP_DEBUG_DISPLAY', false);
+define('WP_DEBUG_LOG', true);
 
 /* That's all, stop editing! Happy blogging. */
 
