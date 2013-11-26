@@ -185,6 +185,17 @@ INDEX
 MUSIC
 ==========*/
 
+/*=========
+SHOWS
+===========*/
+.show-type ul{
+  list-style: none;
+  padding: 0;
+}
+.show-type ul li{
+  display: inline;
+}
+
 /*========
 FOOTER
 ==========*/

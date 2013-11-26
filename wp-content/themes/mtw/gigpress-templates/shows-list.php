@@ -13,10 +13,8 @@
 //	have a look at the docs: http://gigpress.com/docs/
 
 ?>
-
 <tbody class="vevent">
 	<tr class="gigpress-row <?php echo $class; ?>">
-	
 		<td class="gigpress-date">
 			<abbr class="dtstart" title="<?php echo $showdata['iso_date']; ?>"><?php echo $showdata['date']; ?></abbr>
 		<?php if($showdata['end_date']) : ?>
@@ -47,7 +45,6 @@
 	</tr>
 	
 	<tr class="gigpress-info <?php echo $class; ?>">
-	
 		<td class="gigpress-links-cell">
 			<?php
 			// Only show these links if this show is in the future
@@ -63,13 +60,10 @@
 			</div>
 			<?php endif; ?>
 		</td>
-		
 		<td colspan="<?php echo $cols - 1; ?>" class="description">
-		
 			<?php if($showdata['time']) : ?>
 				<span class="gigpress-info-item"><span class="gigpress-info-label"><?php _e("Time", "gigpress"); ?>:</span> <?php echo $showdata['time']; ?>.</span>
 			<?php endif; ?>
-			
 			<?php if($showdata['price']) : ?>
 				<span class="gigpress-info-item"><span class="gigpress-info-label"><?php _e("Admission", "gigpress"); ?>:</span> <?php echo $showdata['price']; ?>.</span>
 			<?php endif; ?>
@@ -104,9 +98,7 @@
 
 			<?php if($showdata['external_link']) : ?>
 				<span class="gigpress-info-item"><?php echo $showdata['external_link']; ?></span>
-			<?php endif; ?>					
-		
+			<?php endif; ?>						
 		</td>
-	
 	</tr>
-</tbody>	
+</tbody>

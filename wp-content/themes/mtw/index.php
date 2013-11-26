@@ -2,12 +2,12 @@
 <div class="bg-paper">
 	<div class="container margin-bottom-20">
 		<div class="row">
-   			<?php $count = 1 ?>
-			<?php $latest_news = new WP_Query('cat=2&showposts=1'); ?>
-			<?php if($latest_news->have_posts()) : ?>
-				<?php while($latest_news->have_posts()) : ?>
-					<?php $latest_news->the_post(); ?>
-						<div class="col-sm-12 col-md-8 col-lg-6">
+   				<?php $count = 1 ?>
+				<?php $latest_news = new WP_Query('cat=2&showposts=1'); ?>
+				<?php if($latest_news->have_posts()) : ?>
+					<?php while($latest_news->have_posts()) : ?>
+						<?php $latest_news->the_post(); ?>
+						<div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
 							<div class="row">
 								<div class="col-sm-12 padding-0">
 									<h2>Latest News</h2>
@@ -29,21 +29,23 @@
 								</div>
 							</div>
 						</div>
-				<?php endwhile;?>
-			<?php endif; ?>
-			<?php wp_reset_query(); ?>
+					<?php endwhile;?>
+				<?php endif; ?>
+				<?php wp_reset_query(); ?>
 			<!--Loop Goes here-->
-			<h2>Upcoming Shows</h2>
-			<?php if(gigpress_has_upcoming()) : ?>
-				<?php
-				    $options = array(
-				    	'scope' => 'upcoming', 
-				    	'limit' => 4);
-				    echo gigpress_shows($options);
-				?>
-			<?else:?>
-			Sorry, We have no upcoming shows.
-			<?php endif; ?>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
+				<h2>Upcoming Shows</h2>
+				<?php if(gigpress_has_upcoming()) : ?>
+					<?php
+					    $options = array(
+					    	'scope' => 'upcoming', 
+					    	'limit' => 3);
+					    echo gigpress_shows($options);
+					?>
+				<?else:?>
+					Sorry, We have no upcoming shows.
+				<?php endif; ?>
+			</div>
 			<!--Loop Ends here-->
 		</div>
 	</div>
@@ -61,18 +63,14 @@
 							        widget       = SC.Widget(widgetIframe);
 							    widget.bind(SC.Widget.Events.READY, {auto_play: true}, function() {
 							    	widget.bind(SC.Widget.Events.PLAY, function() {
-								        // get information about currently playing sound
 								        widget.getCurrentSound(function(currentSound) {
 								          console.log('sound ' + currentSound.get('') + 'began to play');
 								        });
 							    	});
-							      	// get current level of volume
 								    widget.getVolume(function(volume) {
 								    	console.log('current volume value is ' + volume);
 								    });
-							      	// set new volume level
 							      	widget.setVolume(75);
-							      	// get the value of the current position
 							    });
 							}());
 							</script>
