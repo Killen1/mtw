@@ -28,6 +28,9 @@ HELPER CLASSES
 .margin-0{
   margin: 0 !important;
 }
+.margin-10{
+  margin:10px;
+}
 .margin-top-0{
   margin-top: 0 !important;
 }
@@ -167,7 +170,9 @@ HEADER
   opacity: 1;
   background: #fff;
 }
-
+.addthis_32x32_style .at15nc.at300bs, .addthis_32x32_style .at15nc.at15t{
+  background: url(images/Facebook.png) no-repeat;
+}
 /*========
 INDEX
 ==========*/
@@ -195,7 +200,12 @@ SHOWS
 .show-type ul li{
   display: inline;
 }
-
+.tabs li a:hover{
+text-decoration: none;
+}
+.current{
+  text-decoration: underline;
+}
 /*========
 FOOTER
 ==========*/

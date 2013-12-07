@@ -20,6 +20,7 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="<?php echo SITE_ROOT ?>js/slide-gallery.js"></script>
 <script src="<?php echo SITE_ROOT ?>js/soundcloud.js"></script>
+<?php if ( is_page('shows')): ?><script src="<?php echo SITE_ROOT ?>js/gig-tabs.js"></script><? endif; ?>
 </head>
 <body <?php body_class(); ?>>
 	<div class="row">
@@ -40,7 +41,6 @@
 			});
 		</script>
 		<?//DO NOT EDIT ANYTHING ABOVE THIS POINT!!! IF YOU DO NEED TO ADD SOMETHING CONTACT NATHAN?>
-
 		<nav id="main-nav" class="navbar navbar-default col-sm-12 margin-0" role="navigation">
 			<div class="row">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -61,9 +61,11 @@
 							<li <?php if ( is_home() ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>">Home</a></li>
 							<li <?php if ( is_page('music') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>music">Music</a></li>
 							<li <?php if ( is_page('shows') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>shows">Shows</a></li>
+							<li<?//php if() is_page('') ) {echo "class=/"}?>><a href="<?php //echo MTW_ROOT; ?>">News</a></li>
 							<li <?php if ( is_page('gallery') ) {echo " class=\"active\"";}?>><a href="#">Gallery</a></li>
 							<li <?php if ( is_page('contact') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>contact">Contact</a></li>
 							<li><a href="#">The Band</a></li>
+
 						</ul>
 					</div>
 				</div>

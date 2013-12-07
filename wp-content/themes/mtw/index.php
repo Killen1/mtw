@@ -38,9 +38,13 @@
 				<?php if(gigpress_has_upcoming()) : ?>
 					<?php
 					    $options = array(
-					    	'scope' => 'upcoming', 
-					    	'limit' => 3);
-					    echo gigpress_shows($options);
+							'limit' => 3,
+							'scope' => 'upcoming',
+							'show_tours' => 'no',
+							'group_artists' => 'no',
+							'artist_order' => 'alphabetical',
+					    );
+					    echo gigpress_sidebar($options);
 					?>
 				<?else:?>
 					Sorry, We have no upcoming shows.
@@ -54,7 +58,18 @@
 			<div id="wrapper" class="bg-fabric">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-6 "></div>
+						<div class="col-xs-12 col-sm-6 ">
+							<div class="margin-10">
+								<img src="http://placehold.it/140x140" alt="..." class="img-circle margin-10">
+								<img src="http://placehold.it/140x140" alt="..." class="img-circle margin-10">
+								<img src="http://placehold.it/140x140" alt="..." class="img-circle margin-10">
+							</div>
+							<div class="margin-10">
+								<img src="http://placehold.it/140x140" alt="..." class="img-circle margin-10">
+								<img src="http://placehold.it/140x140" alt="..." class="img-circle margin-10">
+								<img src="http://placehold.it/140x140" alt="..." class="img-circle margin-10">
+							</div>
+						</div>
 						<div class="col-xs-12 col-sm-6 margin-bottom-20 margin-top-20">
 							<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynard-7" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
 							<script>

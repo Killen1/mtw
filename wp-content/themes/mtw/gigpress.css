@@ -244,11 +244,13 @@ a.gigpress-ical, a.gigpress-ical:hover {
 /* This is the unordered list that holds the dates */
 ul.gigpress-listing {
 }
-
 /* Generic styles for the list items within */
 .gigpress-listing li {	
+	list-style: none;
 }
-
+span.gigpress-sidebar-status{
+	display: block;
+}
 /* For artist headings in the sidebar */
 h3.gigpress-list-artist-heading {
 }
@@ -286,40 +288,13 @@ ul.gigpress-related-show {
 
 .gigpress-related-item {
 }
-
-
 /* This is just to include data for hcalendar support, but hide it from view */
 .hide {
 	display: none;
 }
-
 /* Stop Firefox from underlining our abbreviated dates */
 abbr {
 	border: none;
 	text-decoration: none;
 	font-size: 100%;
 }
-
-
-/*======
-SHOWS
-========
-#shows .gigpress-table{
-	width: 100%;
-}
-#shows .vevent{
-	border-bottom: 1px solid #ddd;
-}
-#shows .gigpress-row td{
-	padding:5px 8px;
-}
-#shows tr.gigpress-header th {
-	border-bottom: 1px solid #ddd;
-	font-weight: bold;
-	padding-bottom: 10px;
-}
-#shows .gigpress-table th{
-	padding: 6px 8px;
-	vertical-align: middle;
-	text-align: left;
-}*/

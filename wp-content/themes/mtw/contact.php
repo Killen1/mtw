@@ -19,9 +19,14 @@ get_header(); ?>
 			<h2>Management</h2>
 			<h6>Lulu Clair | soulsinaction.entertainment@gmail.com</h6>
 		</div>
+		<div class="col-xs-12">
+			<h2>Maynard &amp; The Walnut</h2>
+			<h6>mtw@maynardandthewalnut.com</h6>
+		</div>
+		<div class="col-xs-12">
+			<h2>Booking</h2>
+			<h6>booking@maynardandthewalnut.com</h6>
+		</div>
 	</div>
 </div>
-
-
-
 <?php get_footer();?>
