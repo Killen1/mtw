@@ -7,30 +7,6 @@
 //{debug} 
 //echo "<pre>"; print_r(); die();
 get_header(); ?>
-
-<div class="bg-paper">
-<<<<<<< HEAD
-	<div class="row">
-		<div class="col-xs-12">
-			<h1 class="text-center">Contact Us</h1>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-xs-12">
-			<h2>Management</h2>
-			<h6>Lulu Clair | soulsinaction.entertainment@gmail.com</h6>
-		</div>
-		<div class="col-xs-12">
-			<h2>Maynard &amp; The Walnut</h2>
-			<h6>mtw@maynardandthewalnut.com</h6>
-		</div>
-		<div class="col-xs-12">
-			<h2>Booking</h2>
-			<h6>booking@maynardandthewalnut.com</h6>
-		</div>
-	</div>
-</div>
-=======
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -91,9 +67,4 @@ get_header(); ?>
     </div>
   </div> 
 </div>
-
-
-
-
->>>>>>> bf4e6746ca578371a40ccccad838b956c28daecd
 <?php get_footer();?>
