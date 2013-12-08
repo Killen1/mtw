@@ -7,6 +7,7 @@
 //{debug} 
 //echo "<pre>"; print_r(); die();
 get_header(); ?>
+<<<<<<< HEAD
 <?php
 //If the form is submitted
 if(isset($_POST['submit'])) {
@@ -52,6 +53,8 @@ if(isset($_POST['submit'])) {
   }
 }
 ?>
+=======
+>>>>>>> upstream/master
   <div class="container">
     <div class="row">
       <div class="col-xs-12">

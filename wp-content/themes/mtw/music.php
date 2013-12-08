@@ -7,8 +7,6 @@
 //{debug}	
 // echo "<pre>"; print_r(); die();
 get_header(); ?>
-
-
 <div class="bg-paper">
 	<div class="container">
 		<div class="row">
@@ -105,9 +103,6 @@ get_header(); ?>
 		</div>
 	</div>
 </div>	
-
-
-
 <?php get_footer(); ?>
 
 						

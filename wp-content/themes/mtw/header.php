@@ -5,7 +5,7 @@
  */
 //variables set for the site to use
  define( 'SITE_ROOT', get_option('home') . '/wp-content/themes/mtw/' );
- define( 'MTW_ROOT', 'http://www.maynardandthewalnut.com' ); 
+ define( 'MTW_ROOT', 'http://localhost:8888/wordpress/' ); 
  define('SITE_HOME', get_option('home') );
 
 ?>
@@ -13,13 +13,15 @@
 <html>
 <head>
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>style.css">
+<link rel="stylesheet" href="<?php echo SITE_ROOT ?>gigpress.css">
 <link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <script src="<?php echo SITE_ROOT ?>js/jquery-1.10.2.min.js"></script> 
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="<?php echo SITE_ROOT ?>js/slide-gallery.js"></script>
 <script src="<?php echo SITE_ROOT ?>js/soundcloud.js"></script>
-<?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>jquery.validate.pack.js"></script><? endif; ?>
+<?php if ( is_page('shows')): ?><script src="<?php echo SITE_ROOT ?>js/gig-tabs.js"></script><? endif; ?>
+<?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/jquery.validate.pack.js"></script><? endif; ?>
 <?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/bootstrap-contact.js"></script><? endif; ?>
 <body <?php body_class(); ?>>
 	<div class="row">
@@ -40,7 +42,6 @@
 			});
 		</script>
 		<?//DO NOT EDIT ANYTHING ABOVE THIS POINT!!! IF YOU DO NEED TO ADD SOMETHING CONTACT NATHAN?>
-
 		<nav id="main-nav" class="navbar navbar-default col-sm-12 margin-0" role="navigation">
 			<div class="row">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -59,11 +60,12 @@
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav">
 							<li <?php if ( is_home() ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>">Home</a></li>
-							<li <?php if ( is_page('music') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>/music">Music</a></li>
-							<li <?php if ( is_page('shows') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>/shows">Shows</a></li>
-							<li><a href="#">Gallery</a></li>
-							<li <?php if ( is_page('contact') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>/contact">Contact</a></li>
-							<li><a href="#">The Band</a></li>
+							<li <?php if ( is_page('music') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>music">Music</a></li>
+							<li <?php if ( is_page('shows') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>shows">Shows</a></li>
+							<li <?php if ( is_page('news') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT; ?>news">News</a></li>
+							<li <?php if ( is_page('gallery') ) {echo " class=\"active\"";}?>><a href="#">Gallery</a></li>
+							<li <?php if ( is_page('contact') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>contact">Contact</a></li>
+							<li <?php if ( is_page('band-3') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>band-3">Band</a></li>
 						</ul>
 					</div>
 				</div>
