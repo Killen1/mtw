@@ -6,59 +6,52 @@
  */
 //{debug} 
 //echo "<pre>"; print_r(); die();
-
+get_header(); ?>
+<?php
 //If the form is submitted
 if(isset($_POST['submit'])) {
+  //Check to make sure that the name field is not empty
+  if(trim($_POST['contactname']) == '') {
+    $hasError = true;
+  } else {
+    $name = trim($_POST['contactname']);
+  }
+  //Check to make sure that the subject field is not empty
+  if(trim($_POST['subject']) == '') {
+    $hasError = true;
+  } else {
+    $subject = trim($_POST['subject']);
+  }
 
-        //Check to make sure that the name field is not empty
-        if(trim($_POST['contactname']) == '') {
-                $hasError = true;
-        } else {
-                $name = trim($_POST['contactname']);
-        }
+  //Check to make sure sure that a valid email address is submitted
+  if(trim($_POST['email']) == '')  {
+    $hasError = true;
+  } else if (!filter_var( trim($_POST['email'], FILTER_VALIDATE_EMAIL ))) {
+    $hasError = true;
+  } else {
+    $email = trim($_POST['email']);
+  }
+  //Check to make sure comments were entered
+  if(trim($_POST['message']) == '') {
+    $hasError = true;
+  } else {
+    if(function_exists('stripslashes')) {
+            $comments = stripslashes(trim($_POST['message']));
+    } else {
+            $comments = trim($_POST['message']);
+    }
+  }
+  //If there is no error, send the email
+  if(!isset($hasError)) {
+    $emailTo = 'alex@amantecoffee.com'; // Put your own email address here
+    $body = "Name: $name \n\nEmail: $email \n\nPhone Number: $phone \n\nSubject: $subject \n\nComments:\n $comments";
+    $headers = 'From: M&TW <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 
-        //Check to make sure that the subject field is not empty
-        if(trim($_POST['subject']) == '') {
-                $hasError = true;
-        } else {
-                $subject = trim($_POST['subject']);
-        }
-
-        //Check to make sure sure that a valid email address is submitted
-        if(trim($_POST['email']) == '')  {
-                $hasError = true;
-        } else if (!filter_var( trim($_POST['email'], FILTER_VALIDATE_EMAIL ))) {
-                $hasError = true;
-        } else {
-                $email = trim($_POST['email']);
-        }
-
-        //Check to make sure comments were entered
-        if(trim($_POST['message']) == '') {
-                $hasError = true;
-        } else {
-                if(function_exists('stripslashes')) {
-                        $comments = stripslashes(trim($_POST['message']));
-                } else {
-                        $comments = trim($_POST['message']);
-                }
-        }
-
-        //If there is no error, send the email
-        if(!isset($hasError)) {
-                $emailTo = 'alex@amantecoffee.com'; // Put your own email address here
-                $body = "Name: $name \n\nEmail: $email \n\nPhone Number: $phone \n\nSubject: $subject \n\nComments:\n $comments";
-                $headers = 'From: My Site <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
-
-                mail($emailTo, $subject, $body, $headers);
-                $emailSent = true;
-        }
+    mail($emailTo, $subject, $body, $headers);
+    $emailSent = true;
+  }
 }
-
-
-get_header(); ?>
-
-<div class="bg-paper">
+?>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -70,10 +63,9 @@ get_header(); ?>
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <form role="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="contactform">
+        <form role="form" method="post" action="http://maynardandthewalnut.com/contact" id="contactform">
           <fieldset>
             <legend>Send Us a Message</legend>
-
             <?php if(isset($hasError)) { //If errors are found ?>
               <p class="alert alert-danger">Oops! Please make sure you've dotted your 'i's and crossed you 't's then try again. Thank you!</p>
             <?php } ?>
@@ -94,7 +86,6 @@ get_header(); ?>
               <label for="email">Your Email<span class="help-required">*</span></label>
               <input type="text" name="email" id="email" value="" class="form-control required email" role="input" aria-required="true" />
             </div>
-
             <div class="form-group">
               <label for="subject">Subject<span class="help-required">*</span></label>
               <select name="subject" id="subject" class="form-control required" role="select" aria-required="true">
@@ -103,7 +94,6 @@ get_header(); ?>
                 <option>Other</option>
               </select>
             </div>
-
             <div class="form-group">
               <label for="message">Message<span class="help-required">*</span></label>
               <textarea rows="8" name="message" id="message" class="form-control required" role="textbox" aria-required="true"></textarea>
@@ -119,8 +109,4 @@ get_header(); ?>
     </div>
   </div> 
 </div>
-
-
-
-
 <?php get_footer();?>
