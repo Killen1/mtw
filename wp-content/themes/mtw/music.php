@@ -7,8 +7,6 @@
 //{debug}	
 // echo "<pre>"; print_r(); die();
 get_header(); ?>
-
-
 <div class="bg-paper">
 	<div class="container">
 		<div class="row">
