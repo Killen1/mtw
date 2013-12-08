@@ -49,6 +49,7 @@
 				<?else:?>
 					Sorry, We have no upcoming shows.
 				<?php endif; ?>
+				<h4><a href="<?php echo MTW_ROOT ?>shows">More Shows</a></h4>
 			</div>
 			<!--Loop Ends here-->
 		</div>
