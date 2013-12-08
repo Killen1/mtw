@@ -20,7 +20,7 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="<?php echo SITE_ROOT ?>js/slide-gallery.js"></script>
 <script src="<?php echo SITE_ROOT ?>js/soundcloud.js"></script>
-<?php if ( is_page('shows')): ?><script src="<?php echo SITE_ROOT ?>js/gig-tabs.js"></script><? endif; ?>
+<?php if ( is_page('shows')):?><script src="<?php echo SITE_ROOT ?>js/gig-tabs.js"></script><? endif; ?>
 </head>
 <body <?php body_class(); ?>>
 	<div class="row">
