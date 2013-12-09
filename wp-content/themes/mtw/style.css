@@ -124,12 +124,25 @@ HELPER CLASSES
 .padding-0{
   padding:0 !important;
 }
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 /*===============
 HEADER
 ================*/
+#fixed-menu{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 103%;
+}
 #slider{
   position: relative;
-  padding-top: 40%;
+  padding-top: 45%;
   overflow: hidden;
 }
 #slider .slide{
@@ -140,7 +153,6 @@ HEADER
   z-index: 1;
   opacity: 0;
 }
-
 #slider img.slide{
   height: auto;
 }
@@ -164,7 +176,6 @@ HEADER
   cursor: pointer;
   transition: all 150ms;
 }
-
 .controls .pager_list li:hover,
 .controls .pager_list li.active{
   opacity: 1;

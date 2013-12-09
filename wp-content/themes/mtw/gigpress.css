@@ -243,6 +243,7 @@ a.gigpress-ical, a.gigpress-ical:hover {
 
 /* This is the unordered list that holds the dates */
 ul.gigpress-listing {
+	padding: 0;
 }
 /* Generic styles for the list items within */
 .gigpress-listing li {	

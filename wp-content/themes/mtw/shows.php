@@ -16,7 +16,7 @@ get_header(); ?>
 				<h1 class="text-center">Show Dates</h1>
 				<div class="show-type">
 					<ul class="tabs padding-0">
-						<li><a class="current" href="#upcoming">Upcoming Dates</a> |</li>
+						<li><a href="#upcoming">Upcoming Dates</a> |</li>
 						<li><a href="#archive">Archive</a></li>
 					</ul>
 				</div>
@@ -33,7 +33,7 @@ get_header(); ?>
 							<p>Sorry, We have no upcoming shows.</p>
 						<?php endif; ?>
 					</div>
-					<div id="archive" class="tab-content">
+					<div id="archive" class="tab-content" style="display:none;">
 						<?php echo gigpress_archive() ; ?>
 					</div>
 				</div>
