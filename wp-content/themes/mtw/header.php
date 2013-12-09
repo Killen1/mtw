@@ -9,7 +9,6 @@
  define('SITE_HOME', get_option('home') );
 
 ?>
-
 <html>
 <head>
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>style.css">

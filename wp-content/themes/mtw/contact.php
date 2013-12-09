@@ -67,7 +67,7 @@ if(isset($_POST['submit'])) {
       <div class="margin-top-20 col-md-6 col-lg-6">
         <form role="form" method="post" action="http://maynardandthewalnut.com/contact" id="contactform">
           <fieldset>
-            <legend><h2>Contact Us</h2></legend>
+            <legend>Contact Us</legend>
             <?php if(isset($hasError)) { //If errors are found ?>
               <p class="alert alert-danger">Oops! Please make sure you've dotted your 'i's and crossed you 't's then try again. Thank you!</p>
             <?php } ?>

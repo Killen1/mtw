@@ -10,8 +10,12 @@ get_header(); ?>
 	<?php $news = new WP_Query('posts_per_page=10'); ?>
 	<?php if($news->have_posts()) : ?>
 		<?php while($news->have_posts()): $news->the_post(); ?>
-		<div class="post-wrapper">
-			<h1><?php the_title(); ?></h1>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="post-wrapper">
+					<h1><?php the_title(); ?></h1>
+				</div>
+			</div>
 		</div>
 		<?php endwhile;?>
 	<?php endif; ?>
