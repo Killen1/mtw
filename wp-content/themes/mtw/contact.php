@@ -21,7 +21,6 @@ get_header(); ?>
         <form role="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="contactform">
           <fieldset>
             <legend>Send Us a Message</legend>
-
             <?php if(isset($hasError)) { //If errors are found ?>
               <p class="alert alert-danger">Oops! Please make sure you've dotted your 'i's and crossed you 't's then try again. Thank you!</p>
             <?php } ?>
@@ -42,7 +41,6 @@ get_header(); ?>
               <label for="email">Your Email<span class="help-required">*</span></label>
               <input type="text" name="email" id="email" value="" class="form-control required email" role="input" aria-required="true" />
             </div>
-
             <div class="form-group">
               <label for="subject">Subject<span class="help-required">*</span></label>
               <select name="subject" id="subject" class="form-control required" role="select" aria-required="true">
@@ -51,7 +49,6 @@ get_header(); ?>
                 <option>Other</option>
               </select>
             </div>
-
             <div class="form-group">
               <label for="message">Message<span class="help-required">*</span></label>
               <textarea rows="8" name="message" id="message" class="form-control required" role="textbox" aria-required="true"></textarea>
