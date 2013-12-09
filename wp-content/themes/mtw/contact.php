@@ -7,7 +7,6 @@
 //{debug} 
 //echo "<pre>"; print_r(); die();
 get_header(); ?>
-<<<<<<< HEAD
 <?php
 //If the form is submitted
 if(isset($_POST['submit'])) {
@@ -53,22 +52,22 @@ if(isset($_POST['submit'])) {
   }
 }
 ?>
-=======
->>>>>>> upstream/master
+<div class="bg-paper">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <h2>Management</h2>
         <h6>Lulu Clair | soulsinaction.entertainment@gmail.com</h6>
+        <h2>Booking</h2>
+        <h6>booking@maynardthewalnut.com</h2>
+        <h2>Merch</h2>
+        <h6>###</h6>
+        <!-- Sign up for Email List -->
       </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
+      <div class="margin-top-20 col-md-6 col-lg-6">
         <form role="form" method="post" action="http://maynardandthewalnut.com/contact" id="contactform">
           <fieldset>
-            <legend>Send Us a Message</legend>
+            <legend><h2>Contact Us</h2></legend>
             <?php if(isset($hasError)) { //If errors are found ?>
               <p class="alert alert-danger">Oops! Please make sure you've dotted your 'i's and crossed you 't's then try again. Thank you!</p>
             <?php } ?>
@@ -103,8 +102,8 @@ if(isset($_POST['submit'])) {
             </div>
 
             <div class="actions">
-              <input type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-primary" title="Click here to submit your message!" />
-              <input type="reset" value="Clear Form" class="btn btn-danger" title="Remove all the data from the form." />
+              <input type="submit" value="Send" name="submit" id="submitButton" class="btn btn-primary" title="Click here to submit your message!" />
+              <input type="reset" value="Clear" class="btn btn-danger" title="Remove all the data from the form." />
             </div>
           </fieldset>
         </form>
