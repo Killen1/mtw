@@ -1,8 +1,7 @@
-/* Bootstrap Contact Form
+/* Contact Form
  ***************************************************************************/
 $(document).ready(function(){
 	// validate signup form on keyup and submit
-
 	var validator = $("#contactform").validate({
 		errorClass:'has-error',
 		validClass:'has-success',

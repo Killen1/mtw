@@ -1,23 +1,15 @@
 /*===============================
 GigPress Plugin style Overrides
 ================================*/
-/*
-This is the default stylesheet.  DO NOT MAKE CHNAGES HERE!
-To customize any of these styles, copy the rules you which to change
-into a file called 'gigpress.css' in your current theme directory.
-Any style changes make there will override styles in this document.
-*/
 
 /* By default this is an h3 that appears above each artist's list of shows */
 h3.gigpress-artist-heading  {	
 }
-
 /* This span contains the RSS and iCal links for the artist */
 span.gigpress-artist-subscriptions {
 	margin-left: 5px;
 	float: right;
 }
-
 /* Default wrapper for the year/month menu */
 .gigpress-menu-container {
 	padding: 5px 0;

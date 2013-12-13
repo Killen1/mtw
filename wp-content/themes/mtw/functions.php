@@ -11,7 +11,6 @@ add_theme_support( 'post-thumbnails' );
 
 //Adds borwser class so we can style according to browser
 function organizedthemes_browser_body_class($classes) {
- 
     global $is_gecko, $is_IE, $is_opera, $is_safari, $is_chrome;
  
     if($is_gecko)      $classes[] = 'firefox';
@@ -22,9 +21,22 @@ function organizedthemes_browser_body_class($classes) {
     else               $classes[] = 'unknown';
  
     return $classes;
- 
 }
 add_filter('body_class','organizedthemes_browser_body_class');
 
+//This is a function for word count in excerpt
+function custom_excerpt_length( $length ) {
+  return 75;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+//Function for the post thumbnail Title
+function the_post_thumbnail_caption( $post_id ) {
+  $thumbnail_id    = get_post_thumbnail_id($post_id);
+  $thumbnail_image = get_posts(array('p' => $thumbnail_id, 'post_type' => 'attachment'));
+  if ($thumbnail_image && isset($thumbnail_image[0])) {
+    return $thumbnail_image[0]->post_excerpt;
+  }
+}
 
 ?>

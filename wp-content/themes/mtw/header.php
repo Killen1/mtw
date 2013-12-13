@@ -7,7 +7,6 @@
  define( 'SITE_ROOT', get_option('home') . '/wp-content/themes/mtw/' );
  define( 'MTW_ROOT', 'http://localhost:8888/wordpress/' ); 
  define('SITE_HOME', get_option('home') );
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,6 +15,9 @@
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>gigpress.css">
 <link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>bootstrap.min.css">
+<meta property="og:title" content="<?php the_title(); ?>">
+<meta property="og:image" content="<?php echo get_the_post_thumbnail(); ?> ">
+<meta property="og:description" content="<?php the_excerpt(); ?> " />
 <script src="<?php echo SITE_ROOT ?>js/jquery-1.10.2.min.js"></script> 
 <script src="<?php echo SITE_ROOT ?>js/bootstrap.min.js"></script>
 <script src="<?php echo SITE_ROOT ?>js/slide-gallery.js"></script>

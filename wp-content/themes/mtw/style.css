@@ -1,3 +1,10 @@
+body,html{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
 /*=============
 HELPER CLASSES
 ===============*/
@@ -20,7 +27,6 @@ HELPER CLASSES
 .clearfix:after {
     clear: both;
 }
-
 .clearfix {
     zoom: 1; /* IE < 8 */
 }
@@ -124,13 +130,6 @@ HELPER CLASSES
 .padding-0{
   padding:0 !important;
 }
-body,html{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
 /*===============
 HEADER
 ================*/
@@ -163,7 +162,6 @@ HEADER
   text-align: center;
   z-index: 4;
 }
-
 .controls .pager_list li{
   display: inline-block;
   width: 15px;
@@ -182,7 +180,7 @@ HEADER
   background: #fff;
 }
 .addthis_32x32_style .at15nc.at300bs, .addthis_32x32_style .at15nc.at15t{
-  background: url(images/Facebook.png) no-repeat;
+  background: url(/images/Facebook.png) no-repeat;
 }
 /*========
 INDEX
@@ -200,14 +198,15 @@ INDEX
 /*========
 MUSIC
 ==========*/
-
+/*========
+NEWS
+==========*/
+.news-post-wrapper{
+  border-bottom: 1px solid #ddd;
+}
 /*=========
 SHOWS
 ===========*/
-.show-type ul{
-  list-style: none;
-  padding: 0;
-}
 .show-type ul li{
   display: inline;
 }
@@ -218,3 +217,21 @@ SHOWS
 /*========
 FOOTER
 ==========*/
+
+
+/*============================
+@media querys custom overrides  
+==============================*/
+@media (max-width: 768px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
+

@@ -14,7 +14,9 @@
 						</div>
 						<div class="row">
 							<div class="col-sm-5 col-md-5 col-lg-6 margin-bottom-10 padding-0">
-								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php echo get_the_post_thumbnail( $post_id, array(260,260) ); ?></a>
+								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
+									<?php echo get_the_post_thumbnail( $post_id, array(260,260), array('alt' => 'News Image') ); ?>
+								</a>
 							</div>
 							<div class="col-sm-7 col-md-7 col-lg-6">
 								<p>
@@ -24,14 +26,13 @@
 						        		if(strlen($excerpt) > 400) echo "...";
 						        	?>
 								</p>
-								<a href="<?php the_permalink() ?>">Read More</a>
+								<a href="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" title="Read More">Read More</a>
 							</div>
 						</div>
 					</div>
 				<?php endwhile;?>
 			<?php endif; ?>
 			<?php wp_reset_query(); ?>
-			<!--Loop Goes here-->
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
 				<h2>Upcoming Shows</h2>
 				<?php if(gigpress_has_upcoming()) : ?>
@@ -46,11 +47,10 @@
 					    echo gigpress_sidebar($options);
 					?>
 				<?else:?>
-					Sorry, We have no upcoming shows.
+					<p>Sorry, We have no upcoming shows.</p>
 				<?php endif; ?>
-				<h4><a href="<?php echo MTW_ROOT ?>shows">More Shows</a></h4>
+				<h4><a href="<?php echo MTW_ROOT ?>shows" title="More Shows">More Shows</a></h4>
 			</div>
-			<!--Loop Ends here-->
 		</div>
 	</div>
 	<div class="row">
@@ -73,21 +73,21 @@
 						<div class="col-xs-12 col-sm-6 margin-bottom-20 margin-top-20">
 							<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynard-7" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
 							<script>
-							(function(){
-							    var widgetIframe = document.getElementById('sound-cloud'),
-							        widget       = SC.Widget(widgetIframe);
-							    widget.bind(SC.Widget.Events.READY, {auto_play: true}, function() {
-							    	widget.bind(SC.Widget.Events.PLAY, function() {
-								        widget.getCurrentSound(function(currentSound) {
-								          console.log('sound ' + currentSound.get('') + 'began to play');
-								        });
-							    	});
-								    widget.getVolume(function(volume) {
-								    	console.log('current volume value is ' + volume);
+								(function(){
+								    var widgetIframe = document.getElementById('sound-cloud'),
+								        widget       = SC.Widget(widgetIframe);
+								    widget.bind(SC.Widget.Events.READY, {auto_play: true}, function() {
+								    	widget.bind(SC.Widget.Events.PLAY, function() {
+									        widget.getCurrentSound(function(currentSound) {
+									          console.log('sound ' + currentSound.get('') + 'began to play');
+									        });
+								    	});
+									    widget.getVolume(function(volume) {
+									    	console.log('current volume value is ' + volume);
+									    });
+								      	widget.setVolume(75);
 								    });
-							      	widget.setVolume(75);
-							    });
-							}());
+								}());
 							</script>
 						</div>
 					</div>

@@ -7,7 +7,6 @@ function init_tabs(){
 	});
 	$('ul.tabs a').click(function(){
 		if(!$(this).hasClass('current')){
-			//Change indicator 
 			$(this).addClass('current').parent('li').siblings('li')
 				.find('a.current').removeClass('current');
 

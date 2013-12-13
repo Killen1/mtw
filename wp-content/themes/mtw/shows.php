@@ -9,16 +9,23 @@
 get_header(); ?>
 <div id="shows">
 	<div class="bg-paper">
-		<?php global $post; ?>
 		<div class="row">
 			<div class="col-sm-2"></div>
 			<div class="col-xs-12 col-sm-8">
 				<h1 class="text-center">Show Dates</h1>
-				<div class="show-type">
-					<ul class="tabs padding-0">
-						<li><a href="#upcoming">Upcoming Dates</a> |</li>
-						<li><a href="#archive">Archive</a></li>
-					</ul>
+				<div class="row">
+					<div class="show-type col-xs-6">
+						<ul class="tabs padding-0 list-unstyled">
+							<li><a href="#upcoming">Upcoming Dates</a> |</li>
+							<li><a href="#archive">Archive</a></li>
+						</ul>
+					</div>
+					<div class="social-media col-xs-6">
+						<ul class=" pull-right padding-0 list-unstyled list-inline">
+							<li><a href="#upcoming">&nbsp;</a></li>
+							<li><a href="#archive">&nbsp;</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="tabs-content-wrap">
 					<div id="upcoming" class="tab-content">
