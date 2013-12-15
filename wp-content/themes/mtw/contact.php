@@ -50,9 +50,9 @@ get_header(); ?>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <h2>Management</h2>
-        <h6>Lulu Clair | <a href="#">soulsinaction.entertainment@gmail.com</a></h6>
+        <h6>Lulu Clair | <a href="mailto:lulu.soulsinaction@gmail.com?Subject=Hi%20Lulu">lulu.soulsinaction@gmail.com</a></h6>
         <h2>Booking</h2>
-        <h6><a href="#">booking@maynardthewalnut.com</a></h2>
+        <h6><a href="mailto:booking@maynardthewalnut.com">booking@maynardthewalnut.com</a></h6>
         <h2>Merch</h2>
         <h6>###</h6>
       </div>

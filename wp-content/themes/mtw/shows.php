@@ -22,8 +22,8 @@ get_header(); ?>
 					</div>
 					<div class="social-media col-xs-6">
 						<ul class=" pull-right padding-0 list-unstyled list-inline">
-							<li><a href="https://www.facebook.com/MaynardandTheWalnut">&nbsp;</a></li>
-							<li><a href="https://twitter.com/MaynardWalnut">&nbsp;</a></li>
+							<li><a href="https://www.facebook.com/MaynardandTheWalnut" target="_blank" title="Facebook"><i class="fa fa-facebook fa-3"></i></a></li>
+							<li><a href="https://twitter.com/MaynardWalnut" target="_blank" title="Twitter"><i class="fa fa-twitter fa-3"></i></a></li>
 						</ul>
 					</div>
 				</div>

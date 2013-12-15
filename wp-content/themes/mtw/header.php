@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>gigpress.css">
 <link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>bootstrap.min.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <meta property="og:title" content="<?php the_title(); ?>">
 <meta property="og:image" content="<?php echo get_the_post_thumbnail(); ?> ">
 <meta property="og:description" content="<?php the_excerpt(); ?> " />

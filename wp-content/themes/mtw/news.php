@@ -30,10 +30,10 @@ get_header(); ?>
 							<div id="<?php the_ID(); ?>" class="post-wrapper margin-bottom-20">
 								<h2 class="text-center"><?php the_title(); ?></h2>
 								<p class="text-center"><?php the_date();?> | <?php the_author(); ?> </p>
-								<div class="news-image text-center">
+								<div class="news-image text-center margin-bottom-10">
 									<?php echo get_the_post_thumbnail( $post_id, array(360,360), array('alt' => 'News Image') ); ?>
 								</div>
-								<div class="clearfix">
+								<div class="clearfix  margin-right-10 margin-bottom-10">
 									<!-- AddThis Button BEGIN -->
 									<div class="addthis_toolbox addthis_default_style pull-right">
 										<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" addthis:title="<?php the_title(); ?>"></a>
