@@ -20,11 +20,8 @@
 							</div>
 							<div class="col-sm-7 col-md-7 col-lg-6">
 								<p>
-									<?php 
-						        		$excerpt = get_the_excerpt('','',FALSE);
-						        		echo substr($excerpt, 0, 400);
-						        		if(strlen($excerpt) > 400) echo "...";
-						        	?>
+									<?php// the_excerpt();?>
+									<?php echo word_truncate_excerpt(50); ?>	
 								</p>
 								<a href="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" title="Read More">Read More</a>
 							</div>

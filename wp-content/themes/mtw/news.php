@@ -26,7 +26,8 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="news-post-wrapper">
 					<div class="row">
-						<div class="col-xs-12">
+						<div class="col-sm-1"></div>
+						<div class="col-xs-12 col-sm-10">
 							<div id="<?php the_ID(); ?>" class="post-wrapper margin-bottom-20">
 								<h2 class="text-center"><?php the_title(); ?></h2>
 								<p class="text-center"><?php the_date();?> | <?php the_author(); ?> </p>
@@ -49,6 +50,7 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
+						<div class="col-sm-1"></div>
 					</div>
 				</div>
 			<?php endwhile;?>

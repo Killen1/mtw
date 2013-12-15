@@ -24,11 +24,6 @@ function organizedthemes_browser_body_class($classes) {
 }
 add_filter('body_class','organizedthemes_browser_body_class');
 
-//This is a function for word count in excerpt
-function custom_excerpt_length( $length ) {
-  return 75;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 //Function for the post thumbnail Title
 function the_post_thumbnail_caption( $post_id ) {
@@ -106,5 +101,26 @@ function news_pagination() {
 
   echo '</ul></div>' . "\n";
 }
+
+/*
+//This is a function for word count in the_excerpt()
+function custom_excerpt_length( $length ) {
+  return 100;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+*/
+
+//This function truncates the the excerpt by word not character for get_the_excerpt()
+function word_truncate_excerpt( $limit ){
+  $excerpt = get_the_excerpt();
+
+  if (str_word_count($excerpt, 0) > $limit){
+    $words = str_word_count($excerpt, 2);
+    $pos = array_keys($words);
+    $excerpt = substr($excerpt, 0, $pos[$limit]) . '...';
+  }
+  return $excerpt;
+}
+
 
 ?>

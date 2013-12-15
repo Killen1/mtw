@@ -159,7 +159,6 @@ HEADER
   position: absolute;
   width: 100%;
   bottom: 0;
-  text-align: center;
   z-index: 4;
 }
 .controls .pager_list li{
@@ -179,17 +178,14 @@ HEADER
   opacity: 1;
   background: #fff;
 }
-.addthis_32x32_style .at15nc.at300bs, .addthis_32x32_style .at15nc.at15t{
-  background: url(/images/Facebook.png) no-repeat;
-}
 /*========
 INDEX
 ==========*/
 .bg-paper{
-  background: url(http://maynardandthewalnut.com/wp-content/themes/mtw/images/lightpaperfibers.png);
+  background: url(images/lightpaperfibers.png);
 }
 .bg-fabric{
-  background: url(http://maynardandthewalnut.com/wp-content/themes/mtw/images/bg-fabric.png);
+  background: url(images/bg-fabric.png);
   box-shadow: 20px 0 20px 0;
 }
 .event-date{
@@ -223,7 +219,9 @@ FOOTER
 @media querys custom overrides  
 ==============================*/
 @media (max-width: 768px) {
-
+  #fixed-menu{
+    position: static;
+  }
 }
 @media (min-width: 768px) {
 
