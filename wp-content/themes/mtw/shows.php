@@ -22,8 +22,8 @@ get_header(); ?>
 					</div>
 					<div class="social-media col-xs-6">
 						<ul class=" pull-right padding-0 list-unstyled list-inline">
-							<li><a href="#upcoming">&nbsp;</a></li>
-							<li><a href="#archive">&nbsp;</a></li>
+							<li><a href="https://www.facebook.com/MaynardandTheWalnut">&nbsp;</a></li>
+							<li><a href="https://twitter.com/MaynardWalnut">&nbsp;</a></li>
 						</ul>
 					</div>
 				</div>

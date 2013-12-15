@@ -1,3 +1,7 @@
+/*
+	Gig Tabs
+	By Nathan Killen
+*/
 function init_tabs(){
 	if(!$('ul.tabs').length){
 		return;
