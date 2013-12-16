@@ -114,4 +114,7 @@ function word_truncate_excerpt( $limit ){
   return $excerpt;
 }
 
+
+
+
 ?>

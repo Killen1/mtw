@@ -191,6 +191,10 @@ INDEX
 .event-date{
   border-bottom: 1px solid #ddd;
 }
+.mc4wp-alert,
+.mc4wp-error{
+  color: #E42D27;
+}
 /*========
 MUSIC
 ==========*/

@@ -19,6 +19,14 @@
 								</a>
 							</div>
 							<div class="col-sm-7 col-md-6 col-lg-7">
+								<h3 class="margin-top-0">
+									<?php
+										$tit = the_title('','',FALSE);
+										echo substr($tit, 0, 30);
+										if (strlen($tit) > 30) echo " ...";
+									?>  
+								</h3>
+								<p><i class="fa fa-calendar"></i> <?php the_date();?></p>
 								<p>
 									<?php echo word_truncate_excerpt(55); ?>	
 								</p>
@@ -30,22 +38,24 @@
 			<?php endif; ?>
 			<?php wp_reset_query(); ?>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-				<h2>Upcoming Shows</h2>
-				<?php if(gigpress_has_upcoming()) : ?>
-					<?php
-					    $options = array(
-							'limit' => 3,
-							'scope' => 'upcoming',
-							'show_tours' => 'no',
-							'group_artists' => 'no',
-							'artist_order' => 'alphabetical',
-					    );
-					    echo gigpress_sidebar($options);
-					?>
-				<?else:?>
-					<p>Sorry, We have no upcoming shows.</p>
-				<?php endif; ?>
-				<h5><a href="<?php echo MTW_ROOT ?>shows" title="More Shows">More Shows</a></h5>
+				<div class="gigpress-wrap">
+					<h2>Upcoming Shows</h2>
+					<?php if(gigpress_has_upcoming()) : ?>
+						<?php
+						    $options = array(
+								'limit' => 3,
+								'scope' => 'upcoming',
+								'show_tours' => 'no',
+								'group_artists' => 'no',
+								'artist_order' => 'alphabetical',
+						    );
+						    echo gigpress_sidebar($options);
+						?>
+					<?else:?>
+						<p>Sorry, We have no upcoming shows.</p>
+					<?php endif; ?>
+					<h5><a href="<?php echo MTW_ROOT ?>shows" title="More Shows">More Shows</a></h5>
+				</div>
 				<div class="row">
 					<div class="col-xs-12">
 						<h3>Join Our Mailing List!</h3>
