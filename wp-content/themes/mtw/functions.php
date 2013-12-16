@@ -102,14 +102,6 @@ function news_pagination() {
   echo '</ul></div>' . "\n";
 }
 
-/*
-//This is a function for word count in the_excerpt()
-function custom_excerpt_length( $length ) {
-  return 100;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-*/
-
 //This function truncates the the excerpt by word not character for get_the_excerpt()
 function word_truncate_excerpt( $limit ){
   $excerpt = get_the_excerpt();
@@ -121,6 +113,5 @@ function word_truncate_excerpt( $limit ){
   }
   return $excerpt;
 }
-
 
 ?>

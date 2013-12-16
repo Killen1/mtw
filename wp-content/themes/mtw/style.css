@@ -210,10 +210,21 @@ SHOWS
 .current:hover{
   text-decoration: underline;
 }
+.fa-facebook:hover{
+  color:#425f9c;
+}
+.fa-twitter:hover{
+  color: #00C0F7;
+}
+.fa-instagram:hover{
+  color:#ded3c1;
+}
+.fa-youtube:hover{
+  color:#E42D27;
+}
 /*========
 FOOTER
 ==========*/
-
 
 /*============================
 @media querys custom overrides  

@@ -6,31 +6,30 @@
 			<?php if($latest_news->have_posts()) : ?>
 				<?php while($latest_news->have_posts()) : ?>
 					<?php $latest_news->the_post(); ?>
-					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 						<div class="row">
-							<div class="col-sm-12 padding-0">
+							<div class="col-sm-12">
 								<h2>Latest News</h2>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-5 col-md-5 col-lg-6 margin-bottom-10 padding-0">
+							<div class="col-sm-5 col-md-6 col-lg-5 margin-bottom-10">
 								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
-									<?php echo get_the_post_thumbnail( $post_id, array(260,260), array('alt' => 'News Image') ); ?>
+									<?php echo get_the_post_thumbnail( $post_id, array(300,300), array('alt' => 'News Image') ); ?>
 								</a>
 							</div>
-							<div class="col-sm-7 col-md-7 col-lg-6">
+							<div class="col-sm-7 col-md-6 col-lg-7">
 								<p>
-									<?php// the_excerpt();?>
-									<?php echo word_truncate_excerpt(50); ?>	
+									<?php echo word_truncate_excerpt(55); ?>	
 								</p>
-								<a href="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" title="Read More">Read More</a>
+								<h5><a href="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" title="Read More">Read More</a></h5>
 							</div>
 						</div>
 					</div>
 				<?php endwhile;?>
 			<?php endif; ?>
 			<?php wp_reset_query(); ?>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 				<h2>Upcoming Shows</h2>
 				<?php if(gigpress_has_upcoming()) : ?>
 					<?php
@@ -46,7 +45,13 @@
 				<?else:?>
 					<p>Sorry, We have no upcoming shows.</p>
 				<?php endif; ?>
-				<h4><a href="<?php echo MTW_ROOT ?>shows" title="More Shows">More Shows</a></h4>
+				<h5><a href="<?php echo MTW_ROOT ?>shows" title="More Shows">More Shows</a></h5>
+				<div class="row">
+					<div class="col-xs-12">
+						<h3>Join Our Mailing List!</h3>
+						<?php mc4wp_form(); ?>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

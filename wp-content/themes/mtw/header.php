@@ -11,6 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Maynard and The Walnut</title>
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>style.css">
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>gigpress.css">
 <link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon">

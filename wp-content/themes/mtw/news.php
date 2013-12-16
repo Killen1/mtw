@@ -30,7 +30,7 @@ get_header(); ?>
 						<div class="col-xs-12 col-sm-10">
 							<div id="<?php the_ID(); ?>" class="post-wrapper margin-bottom-20">
 								<h2 class="text-center"><?php the_title(); ?></h2>
-								<p class="text-center"><?php the_date();?> | <?php the_author(); ?> </p>
+								<p class="text-center"><i class="fa fa-calendar"></i> <?php the_date();?> | <?php the_author(); ?> </p>
 								<div class="news-image text-center margin-bottom-10">
 									<?php echo get_the_post_thumbnail( $post_id, array(360,360), array('alt' => 'News Image') ); ?>
 								</div>
