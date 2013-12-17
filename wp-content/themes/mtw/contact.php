@@ -52,9 +52,7 @@ get_header(); ?>
         <h2>Management</h2>
         <h6>Lulu Clair | <a href="mailto:lulu.soulsinaction@gmail.com?Subject=Hi%20Lulu">lulu.soulsinaction@gmail.com</a></h6>
         <h2>Booking</h2>
-        <h6><a href="mailto:booking@maynardthewalnut.com">booking@maynardthewalnut.com</a></h6>
-        <h2>Merch</h2>
-        <h6>###</h6>
+        <h6>Booking | <a href="mailto:booking@maynardthewalnut.com">booking@maynardthewalnut.com</a></h6>
       </div>
       <div class="margin-top-20 col-md-6 col-lg-6">
         <form role="form" method="post" action="http://maynardandthewalnut.com/contact" id="contactform">

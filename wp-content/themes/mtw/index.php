@@ -43,7 +43,7 @@
 					<?php if(gigpress_has_upcoming()) : ?>
 						<?php
 						    $options = array(
-								'limit' => 3,
+								'limit' => 4,
 								'scope' => 'upcoming',
 								'show_tours' => 'no',
 								'group_artists' => 'no',
@@ -56,12 +56,6 @@
 					<?php endif; ?>
 					<h5><a href="<?php echo MTW_ROOT ?>shows" title="More Shows">More Shows</a></h5>
 				</div>
-				<div class="row">
-					<div class="col-xs-12">
-						<h3>Join Our Mailing List!</h3>
-						<?php mc4wp_form(); ?>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -71,15 +65,37 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 ">
-							<div class="margin-10">
-								<img src="http://placehold.it/140x140" alt="..." class="img-circle margin-10">
-								<img src="http://placehold.it/140x140" alt="..." class="img-circle margin-10">
-								<img src="http://placehold.it/140x140" alt="..." class="img-circle margin-10">
-							</div>
-							<div class="margin-10">
-								<img src="http://placehold.it/140x140" alt="..." class="img-circle margin-10">
-								<img src="http://placehold.it/140x140" alt="..." class="img-circle margin-10">
-								<img src="http://placehold.it/140x140" alt="..." class="img-circle margin-10">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="video margin-top-20">
+										<div id="youtube-video">
+											<img class="img-rounded" src="http://placehold.it/350x350" data-toggle="modal" data-target="#myModal">
+										</div>
+										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										  	<div class="modal-dialog">
+											    <div class="modal-content">
+											        <div class="modal-body">
+											        	<iframe width="560" height="410" frameborder="0" allowfullscreen=""></iframe>
+											      	</div>
+											    </div>
+										  	</div>
+										</div>
+									</div>
+									<script>
+									    $('#youtube-video img').click(function () {
+									        var src = 'http://www.youtube.com/v/39EH99I1gg8&amp;autoplay=1';
+									        $('#myModal').modal('show');
+									        $('#myModal iframe').attr('src', src);
+									    });
+									    $('#myModal').click(function () {
+									        $('#myModal iframe').removeAttr('src');
+									    });
+									</script>
+								</div>
+								<div class="col-xs-12">
+									<h3 class="wht">Join Our Mailing List!</h3>
+									<?php mc4wp_form(); ?>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 margin-bottom-20 margin-top-20">
