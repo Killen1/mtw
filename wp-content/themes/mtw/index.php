@@ -67,11 +67,15 @@
 						<div class="col-xs-12 col-sm-6 ">
 							<div class="row">
 								<div class="col-xs-12">
+									<h3 class="wht">Join Our Mailing List!</h3>
+									<?php mc4wp_form(); ?>
+								</div>
+								<div class="col-xs-12">
 									<div class="video margin-top-20">
 										<div id="youtube-video">
-											<img class="img-rounded" src="http://placehold.it/350x350" data-toggle="modal" data-target="#myModal">
+											<a href="#"><img class="img-rounded" src="http://placehold.it/350x350" data-toggle="modal" data-target="#myModal"></a>
 										</div>
-										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 										  	<div class="modal-dialog">
 											    <div class="modal-content">
 											        <div class="modal-body">
@@ -84,17 +88,13 @@
 									<script>
 									    $('#youtube-video img').click(function () {
 									        var src = 'http://www.youtube.com/v/39EH99I1gg8&amp;autoplay=1';
-									        $('#myModal').modal('show');
-									        $('#myModal iframe').attr('src', src);
+									        $('#video-modal').modal('show');
+									        $('#video-modal iframe').attr('src', src);
 									    });
-									    $('#myModal').click(function () {
-									        $('#myModal iframe').removeAttr('src');
+									    $('#video-modal').click(function () {
+									        $('#video-modal iframe').removeAttr('src');
 									    });
 									</script>
-								</div>
-								<div class="col-xs-12">
-									<h3 class="wht">Join Our Mailing List!</h3>
-									<?php mc4wp_form(); ?>
 								</div>
 							</div>
 						</div>
