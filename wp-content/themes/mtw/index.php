@@ -12,7 +12,7 @@
 								<h2>Latest News</h2>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row">  
 							<div class="col-sm-5 col-md-6 col-lg-5 margin-bottom-10">
 								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
 									<?php echo get_the_post_thumbnail( $post_id, array(300,300), array('alt' => 'News Image') ); ?>
