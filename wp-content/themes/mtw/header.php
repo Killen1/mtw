@@ -17,7 +17,10 @@
 <link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>bootstrap.min.css">
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<<<<<<< HEAD
 <link href="http://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+=======
+>>>>>>> 82759fd62e2097889fd6d5703396086934bc9f88
 <meta property="og:title" content="<?php the_title(); ?>">
 <meta property="og:description" content="<?php the_excerpt(); ?>">
 <script src="<?php echo SITE_ROOT ?>js/jquery-1.10.2.min.js"></script> 
