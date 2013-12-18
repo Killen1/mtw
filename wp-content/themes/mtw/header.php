@@ -11,13 +11,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Maynard and The Walnut</title>
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>style.css">
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>gigpress.css">
-<link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>bootstrap.min.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
 <meta property="og:title" content="<?php the_title(); ?>">
-<meta property="og:image" content="<?php echo get_the_post_thumbnail(); ?> ">
-<meta property="og:description" content="<?php the_excerpt(); ?> " />
+<meta property="og:description" content="<?php the_excerpt(); ?>">
 <script src="<?php echo SITE_ROOT ?>js/jquery-1.10.2.min.js"></script> 
 <script src="<?php echo SITE_ROOT ?>js/bootstrap.min.js"></script>
 <script src="<?php echo SITE_ROOT ?>js/slide-gallery.js"></script>
@@ -25,6 +27,7 @@
 <?php if ( is_page('shows')): ?><script src="<?php echo SITE_ROOT ?>js/gig-tabs.js"></script><? endif; ?>
 <?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/jquery.validate.pack.js"></script><? endif; ?>
 <?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/bootstrap-contact.js"></script><? endif; ?>
+</head>
 <body <?php body_class(); ?>>
 <div id="width-wrapper">
 	<div class="row">
@@ -57,13 +60,33 @@
 			</nav>
 		</div>
 		<div id="slider" class="col-sm-12">
-			<img class="slide" src="http://placehold.it/1202x552" alt="">
-			<img class="slide" src="http://placehold.it/1202x551" alt="">
-			<img class="slide" src="http://placehold.it/1202x550" alt="">
-			<div class="controls">
+			<?php if ( is_home()): ?>
+				<img class="slide" src="http://placehold.it/1202x552" alt="">
+				<img class="slide" src="http://placehold.it/1202x551" alt="">
+				<img class="slide" src="http://placehold.it/1202x550" alt="">
+			<?elseif ( is_page('music') ) :?>
+				<img class="slide" src="http://placehold.it/1202x555" alt="">
+				<img class="slide" src="http://placehold.it/1202x554" alt="">
+				<img class="slide" src="http://placehold.it/1202x553" alt="">
+			<?else:?>
+				<img class="slide" src="http://placehold.it/1202x556" alt="">
+				<img class="slide" src="http://placehold.it/1202x557" alt="">
+				<img class="slide" src="http://placehold.it/1202x558" alt="">
+			<?php endif; ?>
+			<div class="controls text-center">
 				<ul class="pager_list padding-0"></ul>
 			</div>
 		</div>
+		<!-- Social media Icons Can go anywhere
+		<div class="social-media text-center">
+			<ul class="padding-0 list-unstyled list-inline">
+				<li><a href="https://www.facebook.com/MaynardandTheWalnut" target="_blank" title="Facebook"><i class="fa fa-facebook fa-lg"></i></a></li>
+				<li><a href="https://twitter.com/MaynardWalnut" target="_blank" title="Twitter"><i class="fa fa-twitter fa-lg"></i></a></li>
+				<li><a href="http://instagram.com/maynardandthewalnut" target="_blank" title="Instagram"><i class="fa fa-instagram fa-lg"></i></a></li>
+				<li><a href="http://www.youtube.com/user/MaynardandTheWalnut" target="_blank" title="Youtube"><i class="fa fa-youtube fa-lg"></i></a></li>
+			</ul>
+		</div>
+		-->
 		<script>
 			jQuery(document).ready(function($) {
 				$('#slider').imageSlider({

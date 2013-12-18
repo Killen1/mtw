@@ -5,6 +5,17 @@ body,html{
   padding: 0px;
   overflow-x: hidden;
 }
+h1{
+  font-family: 'Playfair Display SC', serif !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid #ddd;
+}
+h2, h3, legend{
+  font-family: 'Playfair Display SC', serif !important; 
+}
+p, li, label{
+  font-family: Georgia, 'Times New Roman', serif !important;
+}
 /*=============
 HELPER CLASSES
 ===============*/
@@ -130,6 +141,9 @@ HELPER CLASSES
 .padding-0{
   padding:0 !important;
 }
+.wht{
+  color:#fff;
+}
 /*===============
 HEADER
 ================*/
@@ -138,6 +152,10 @@ HEADER
   top: 0;
   z-index: 10;
   width: 103%;
+}
+#bs-collapse-1 ul{
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: 16px;
 }
 #slider{
   position: relative;
@@ -159,7 +177,6 @@ HEADER
   position: absolute;
   width: 100%;
   bottom: 0;
-  text-align: center;
   z-index: 4;
 }
 .controls .pager_list li{
@@ -179,21 +196,22 @@ HEADER
   opacity: 1;
   background: #fff;
 }
-.addthis_32x32_style .at15nc.at300bs, .addthis_32x32_style .at15nc.at15t{
-  background: url(/images/Facebook.png) no-repeat;
-}
 /*========
 INDEX
 ==========*/
 .bg-paper{
-  background: url(http://maynardandthewalnut.com/wp-content/themes/mtw/images/lightpaperfibers.png);
+  background: url(images/lightpaperfibers.png);
 }
 .bg-fabric{
-  background: url(http://maynardandthewalnut.com/wp-content/themes/mtw/images/bg-fabric.png);
+  background: url(images/bg-fabric.png);
   box-shadow: 20px 0 20px 0;
 }
 .event-date{
   border-bottom: 1px solid #ddd;
+}
+.mc4wp-alert,
+.mc4wp-error{
+  color: #E42D27;
 }
 /*========
 MUSIC
@@ -214,16 +232,29 @@ SHOWS
 .current:hover{
   text-decoration: underline;
 }
+.fa-facebook:hover{
+  color:#425f9c;
+}
+.fa-twitter:hover{
+  color: #00C0F7;
+}
+.fa-instagram:hover{
+  color:#ded3c1;
+}
+.fa-youtube:hover{
+  color:#E42D27;
+}
 /*========
 FOOTER
 ==========*/
-
 
 /*============================
 @media querys custom overrides  
 ==============================*/
 @media (max-width: 768px) {
-
+  #fixed-menu{
+    position: static;
+  }
 }
 @media (min-width: 768px) {
 
