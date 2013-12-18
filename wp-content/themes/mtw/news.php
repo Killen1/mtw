@@ -11,7 +11,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h1 class="text-center">News</h1>
+				<h1 class="text-center padding-bottom-10">News</h1>
 			</div>
 		</div>
 		<?php
@@ -19,7 +19,8 @@ get_header(); ?>
 				'post_type' => 'post',
 				'paged' => $paged,
 				'orderby'=>  'date',
-				'posts_per_page' => 10
+				'posts_per_page' => 10 ,
+				'cat' => '-3'
 			));
 		?>
 		<?php if ( have_posts() ) : ?>
