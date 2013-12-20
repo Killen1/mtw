@@ -12,7 +12,7 @@ get_header(); ?>
 		<div class="margin-bottom-20 row">
 			<div class="col-sm-1"></div>
 			<div class="col-xs-12 col-sm-10">
-				<h1 class="text-center">Music</h1>
+				<h1 class="text-center padding-bottom-10">Music</h1>
 				<?php $music = new WP_Query('category_name=music'); ?>
 				<?php if($music->have_posts()) : ?>
 					<?php while($music->have_posts()): $music->the_post(); ?>
