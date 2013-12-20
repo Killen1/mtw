@@ -180,6 +180,7 @@ HEADER
   position: absolute;
   width: 100%;
   bottom: 0;
+  left: 0;
   z-index: 4;
 }
 .controls .pager_list li{
