@@ -12,7 +12,11 @@
 								<h2>Latest News</h2>
 							</div>
 						</div>
+<<<<<<< HEAD
 						<div class="row">
+=======
+						<div class="row">  
+>>>>>>> d4e543f806a63db487c909766f9627cc0bebb79a
 							<div class="col-sm-5 col-md-6 col-lg-5 margin-bottom-10">
 								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
 									<?php echo get_the_post_thumbnail( $post_id, array(300,300), array('alt' => 'News Image') ); ?>
@@ -68,12 +72,15 @@
 							<div class="row">
 								<div class="col-xs-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
 									<div class="video margin-top-20">
 										<div id="youtube-video">
 											<img class="img-rounded" src="http://placehold.it/350x350" data-toggle="modal" data-target="#myModal">
 										</div>
 										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 =======
+=======
+>>>>>>> d4e543f806a63db487c909766f9627cc0bebb79a
 									<h3 class="wht">Join Our Mailing List!</h3>
 									<?php mc4wp_form(); ?>
 								</div>
@@ -83,7 +90,10 @@
 											<a href="#"><img class="img-rounded" src="http://placehold.it/350x350" data-toggle="modal" data-target="#myModal"></a>
 										</div>
 										<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<<<<<<< HEAD
 >>>>>>> 82759fd62e2097889fd6d5703396086934bc9f88
+=======
+>>>>>>> d4e543f806a63db487c909766f9627cc0bebb79a
 										  	<div class="modal-dialog">
 											    <div class="modal-content">
 											        <div class="modal-body">
@@ -96,6 +106,7 @@
 									<script>
 									    $('#youtube-video img').click(function () {
 									        var src = 'http://www.youtube.com/v/39EH99I1gg8&amp;autoplay=1';
+<<<<<<< HEAD
 <<<<<<< HEAD
 									        $('#myModal').modal('show');
 									        $('#myModal iframe').attr('src', src);
@@ -110,6 +121,8 @@
 									<?php mc4wp_form(); ?>
 								</div>
 =======
+=======
+>>>>>>> d4e543f806a63db487c909766f9627cc0bebb79a
 									        $('#video-modal').modal('show');
 									        $('#video-modal iframe').attr('src', src);
 									    });
@@ -118,7 +131,10 @@
 									    });
 									</script>
 								</div>
+<<<<<<< HEAD
 >>>>>>> 82759fd62e2097889fd6d5703396086934bc9f88
+=======
+>>>>>>> d4e543f806a63db487c909766f9627cc0bebb79a
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 margin-bottom-20 margin-top-20">

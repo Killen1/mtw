@@ -11,16 +11,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 <title>Maynard and The Walnut</title>
+=======
+<title>Maynard and The Walnut</title> 
+>>>>>>> d4e543f806a63db487c909766f9627cc0bebb79a
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>style.css">
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>gigpress.css">
 <link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="<?php echo SITE_ROOT ?>bootstrap.min.css">
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <link href="http://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
 =======
 >>>>>>> 82759fd62e2097889fd6d5703396086934bc9f88
+=======
+>>>>>>> d4e543f806a63db487c909766f9627cc0bebb79a
 <meta property="og:title" content="<?php the_title(); ?>">
 <meta property="og:description" content="<?php the_excerpt(); ?>">
 <script src="<?php echo SITE_ROOT ?>js/jquery-1.10.2.min.js"></script> 
