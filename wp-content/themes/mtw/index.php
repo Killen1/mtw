@@ -67,11 +67,6 @@
 						<div class="col-xs-12 col-sm-6 ">
 							<div class="row">
 								<div class="col-xs-12">
-									<div class="video margin-top-20">
-										<div id="youtube-video">
-											<img class="img-rounded" src="http://placehold.it/350x350" data-toggle="modal" data-target="#myModal">
-										</div>
-										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 									<h3 class="wht">Join Our Mailing List!</h3>
 									<?php mc4wp_form(); ?>
 								</div>
@@ -103,10 +98,6 @@
 									        $('#video-modal iframe').removeAttr('src');
 									    });
 									</script>
-								</div>
-								<div class="col-xs-12">
-									<h3 class="wht">Join Our Mailing List!</h3>
-									<?php mc4wp_form(); ?>
 								</div>
 							</div>
 						</div>
