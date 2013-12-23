@@ -6,7 +6,7 @@
 			<?php if($latest_news->have_posts()) : ?>
 				<?php while($latest_news->have_posts()) : ?>
 					<?php $latest_news->the_post(); ?>
-					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<div class="latest-news col-xs-12 col-sm-12 col-md-8 col-lg-8">
 						<div class="row">
 							<div class="col-sm-12">
 								<h2>Latest News</h2>
@@ -60,7 +60,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-12 padding-0">
+		<div class="col-sm-12">
 			<div id="wrapper" class="bg-fabric">
 				<div class="container">
 					<div class="row">
@@ -72,7 +72,7 @@
 								</div>
 								<div class="col-xs-12">
 									<div class="video margin-top-20">
-										<div id="youtube-video">
+										<div id="youtube-video" class="text-center-xs">
 											<?//This is the image for the youtube Video Goes!?>
 											<a href="#"><img class="img-rounded" src="http://placehold.it/350x350" data-toggle="modal" data-target="#myModal"></a>
 										</div>

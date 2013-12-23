@@ -3,10 +3,10 @@
  * @package WordPress
  * @subpackage Default_Theme
  */
-//variables set for the site to use
- define( 'SITE_ROOT', get_option('home') . '/wp-content/themes/mtw/' );
- define( 'MTW_ROOT', 'http://localhost:8888/wordpress/' ); 
- define('SITE_HOME', get_option('home') );
+	//variables set for the site to use
+	define( 'SITE_ROOT', get_option('home') . '/wp-content/themes/mtw/' );
+	define( 'MTW_ROOT', 'http://localhost:8888/wordpress/' ); 
+	define('SITE_HOME', get_option('home') );
 ?>
 <!DOCTYPE html>
 <head>

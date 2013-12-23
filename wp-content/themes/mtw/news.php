@@ -19,7 +19,7 @@ get_header(); ?>
 				'post_type' => 'post',
 				'paged' => $paged,
 				'orderby'=>  'date',
-				'posts_per_page' => 10 ,
+				'posts_per_page' => 10,
 				'cat' => '-3'
 			));
 		?>
@@ -33,9 +33,13 @@ get_header(); ?>
 								<h2 class="text-center"><?php the_title(); ?></h2>
 								<p class="text-center"><i class="fa fa-calendar"></i> <?php the_date();?> | <?php the_author(); ?> </p>
 								<div class="news-image text-center margin-bottom-10">
-									<?php echo get_the_post_thumbnail( $post_id, array(360,360), array('alt' => 'News Image') ); ?>
+									<?php if( has_post_thumbnail()) :?>
+										<?php echo get_the_post_thumbnail( $post_id, array(360,360), array('alt' => 'News Image') ); ?>
+									<?else:?>
+										<img src="http://placehold.it/350x350" alt="">
+									<?php endif ;?>
 								</div>
-								<div class="clearfix  margin-right-10 margin-bottom-10">
+								<div class="clearfix margin-right-10 margin-bottom-10">
 									<!-- AddThis Button BEGIN -->
 									<div class="addthis_toolbox addthis_default_style pull-right">
 										<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" addthis:title="<?php the_title(); ?>"></a>

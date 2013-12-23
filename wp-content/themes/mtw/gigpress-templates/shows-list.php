@@ -33,7 +33,6 @@
 			<td class="gigpress-country"><?php echo $showdata['country']; ?></td>
 		<?php endif; ?>
 		</tr>
-		
 		<tr class="gigpress-info <?php echo $class; ?>">
 			<td class="gigpress-links-cell">
 				<?php
@@ -81,14 +80,14 @@
 				<?php if($showdata['related_link'] && !empty($gpo['relatedlink_notes'])) : ?>
 					<span class="gigpress-info-item"><?php echo $showdata['related_link']; ?></span> 
 				<?php endif; ?>
-				
-				<?php if($showdata['ticket_link']) : ?>
-					<span class="gigpress-info-item"><?php echo $showdata['ticket_link']; ?></span>
-				<?php endif; ?>
 
 				<?php if($showdata['external_link']) : ?>
 					<span class="gigpress-info-item"><?php echo $showdata['external_link']; ?></span>
-				<?php endif; ?>						
+				<?php endif; ?>	
+				<span><a href="http://www.bandsintown.com/MaynardAndTheWalnut?came_from=198" target="_blank">RSVP</a></span>
+				<?php if($showdata['ticket_link']) : ?>
+					<span class="gigpress-info-item"><?php echo $showdata['ticket_link']; ?></span>
+				<?php endif; ?>					
 			</td>
 		</tr>
 	</tbody>

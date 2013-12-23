@@ -155,6 +155,7 @@ HEADER
   top: 0;
   z-index: 10;
   width: 103%;
+  margin: 0 0 0 0;
 }
 #bs-collapse-1 ul{
   font-family: Georgia, 'Times New Roman', serif !important;
@@ -203,6 +204,10 @@ HEADER
 /*========
 INDEX
 ==========*/
+.latest-news h2{
+border-bottom: 1px solid #ddd;
+padding-bottom: 10px;
+}
 .bg-paper{
   background: url(images/lightpaperfibers.png);
 }
@@ -216,6 +221,21 @@ INDEX
 .mc4wp-alert,
 .mc4wp-error{
   color: #E42D27;
+}
+.addthis_counter.addthis_pill_style a.addthis_button_expanded{
+  width: 39px !important;
+}
+.news-post-wrapper .addthis_default_style .at300b, 
+.news-post-wrapper .addthis_default_style .at300bo, 
+.news-post-wrapper .addthis_default_style .at300m,
+.music-post-wrapper .addthis_default_style .at300b, 
+.music-post-wrapper .addthis_default_style .at300bo, 
+.music-post-wrapper .addthis_default_style .at300m{
+  width:84px !important;
+}
+.news-post-wrapper .addthis_toolbox,
+.music-post-wrapper .addthis_toolbox{
+  width:268px;
 }
 /*========
 MUSIC
@@ -248,16 +268,26 @@ SHOWS
 .fa-youtube:hover{
   color:#E42D27;
 }
+.fa-vimeo-square:hover{
+  color:#3084b4;
+}
+
+/*========
+CONTACT
+==========*/
+
 /*========
 FOOTER
 ==========*/
-
 /*============================
 @media querys custom overrides  
 ==============================*/
 @media (max-width: 768px) {
   #fixed-menu{
     position: static;
+  }
+  .text-center-xs{
+    text-align: center;
   }
 }
 @media (min-width: 768px) {
@@ -269,4 +299,3 @@ FOOTER
 @media (min-width: 1200px) {
 
 }
-

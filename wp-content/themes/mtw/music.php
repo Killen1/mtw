@@ -23,12 +23,10 @@ get_header(); ?>
 								</div>
 								<div class="col-sm-7 col-md-8 col-lg-8">
 									<div class="row">
-										<div class="col-xs-6">
-											<h3><?php the_title(); ?></h3>
-										</div>
-										<div class="col-xs-6">
+										<div class="col-xs-12">
+											<h3 class="margin-top-0"><?php the_title(); ?></h3>
 											<!-- AddThis Button BEGIN -->
-											<div class="addthis_toolbox addthis_default_style pull-right">
+											<div class="addthis_toolbox addthis_default_style">
 												<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="<?php echo MTW_ROOT ?>music#<?php the_ID(); ?>" addthis:title="<?php the_title(); ?>"></a>
 												<a class="addthis_button_tweet" addthis:url="<?php echo MTW_ROOT ?>music#<?php the_ID(); ?>" addthis:title="<?php the_title(); ?>"></a>
 												<a class="addthis_counter addthis_pill_style"></a>
@@ -55,7 +53,7 @@ get_header(); ?>
 	</div>
 </div>	
 <div class="row">
-	<div class="col-sm-12 padding-0">
+	<div class="col-sm-12">
 		<div id="wrapper" class="bg-fabric">
 			<div class="container">
 				<div class="row">
