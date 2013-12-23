@@ -53,6 +53,9 @@ get_header(); ?>
 								<div class="new-content">
 									<?php the_content();?>
 								</div>
+								<div class="text-center">
+									<p><a href="<?php the_permalink(); ?>">Comment</a> | <?php comments_number(); ?></p>
+								</div>
 							</div>
 						</div>
 						<div class="col-sm-1"></div>
