@@ -27,6 +27,7 @@
 <?php if ( is_page('shows')): ?><script src="<?php echo SITE_ROOT ?>js/gig-tabs.js"></script><? endif; ?>
 <?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/jquery.validate.pack.js"></script><? endif; ?>
 <?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/bootstrap-contact.js"></script><? endif; ?>
+<?php if ( is_page('photos')): ?><script src="<?php echo SITE_ROOT ?>js/instafeed.min.js"></script><? endif; ?>
 </head>
 <body <?php body_class(); ?>>
 <div id="width-wrapper">

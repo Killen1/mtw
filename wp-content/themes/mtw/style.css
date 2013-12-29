@@ -276,6 +276,13 @@ SHOWS
 CONTACT
 ==========*/
 
+/*=========
+Photos
+===========*/
+#instafeed a img{
+  margin:10px;
+}
+
 /*========
 FOOTER
 ==========*/
