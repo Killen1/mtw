@@ -36,7 +36,7 @@ get_header(); ?>
       }
     }
     if(!isset($hasError)) {
-      $emailTo = 'maynardandthewalnut@gmail.com';
+      $emailTo = 'mtw@maynardandthewalnut.com';
       $body = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nMessage:\n $comments";
       $headers = 'From: Maynard & The Walnut <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 

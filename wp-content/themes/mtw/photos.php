@@ -12,9 +12,6 @@ get_header(); ?>
 		<h1 class="text-center padding-bottom-10">Photos</h1>
 		<div class="row">
 			<div class="col-xs-12">
-				<?php //foreach :?>
-					<!--This is a loop of the youtube api video-->
-				<?php// endforeach; ?>
 				<div id="instafeed" class="text-center"></div>
 			</div>
 		</div>
@@ -26,7 +23,7 @@ get_header(); ?>
         get: 'user',
         userId: 468590629,
         accessToken: '468590629.467ede5.82869085f3944180af4986eab1fea9bb',
-        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt=""/></a>',
+        template: '<div class="col-xs-6 col-sm-4 col-md-3"><a href="{{link}}" target="_blank" title="{{caption}}"><img src="{{image}}" alt="Maynard & The Walnut"/></a></div>',
         limit: '60'
     });
     userFeed.run();

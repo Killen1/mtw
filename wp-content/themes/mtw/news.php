@@ -19,7 +19,7 @@ get_header(); ?>
 				'post_type' => 'post',
 				'paged' => $paged,
 				'orderby'=>  'date',
-				'posts_per_page' => 10,
+				'posts_per_page' => 5,
 				'cat' => '-3'
 			));
 		?>
@@ -54,7 +54,7 @@ get_header(); ?>
 									<?php the_content();?>
 								</div>
 								<div class="text-center">
-									<p><a href="<?php the_permalink(); ?>">Comment</a> | <?php comments_number(); ?></p>
+									<p><a href="<?php the_permalink(); ?>">Comment <i class="fa fa-comment"></i></a> | <?php comments_number(); ?></p>
 								</div>
 							</div>
 						</div>

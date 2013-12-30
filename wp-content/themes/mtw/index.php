@@ -67,11 +67,10 @@
 						<div class="col-xs-12 col-sm-6 ">
 							<div class="row">
 								<div class="col-xs-12">
-									<h3 class="wht">Join Our Mailing List!</h3>
 									<?php mc4wp_form(); ?>
 								</div>
 								<div class="col-xs-12">
-									<div class="video margin-top-20">
+									<div class="video">
 										<div id="youtube-video" class="text-center-xs">
 											<?//This is the image for the youtube Video Goes!?>
 											<a href="#"><img class="img-rounded" src="http://placehold.it/350x350" data-toggle="modal" data-target="#myModal"></a>
@@ -93,7 +92,6 @@
 									      	$('#video-modal').modal('show');
 									        $('#video-modal iframe').attr('src', src);
 									    });
-									    
 									    $('#video-modal').click(function () {
 									        $('#video-modal iframe').removeAttr('src');
 									    });
