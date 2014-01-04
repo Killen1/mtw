@@ -53,6 +53,8 @@ get_header(); ?>
         <h6>Lulu Clair | <a href="mailto:lulu.soulsinaction@gmail.com?Subject=Hi%20Lulu">lulu.soulsinaction@gmail.com</a></h6>
         <h2>Booking</h2>
         <h6>Booking | <a href="mailto:booking@maynardthewalnut.com">booking@maynardthewalnut.com</a></h6>
+        <h2>Band</h2>
+        <h6>M&amp;TW | <a href="mailto:booking@maynardthewalnut.com">mtw@maynardandthewalnut.com</a></h6>
       </div>
       <div class="margin-top-20 col-md-6 col-lg-6">
         <form role="form" method="post" action="http://maynardandthewalnut.com/contact" id="contactform">
@@ -78,8 +80,9 @@ get_header(); ?>
             <div class="form-group">
               <label for="subject">Subject<span class="help-required">*</span></label>
               <select name="subject" id="subject" class="form-control required" role="select" aria-required="true">
-                <option></option>
                 <option>Booking</option>
+                <option>Just want to say hi</option>
+                <option>Comments</option>
                 <option>Other</option>
               </select>
             </div>
