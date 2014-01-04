@@ -55,8 +55,7 @@ get_header(); ?>
 		<div id="wrapper" class="bg-fabric">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-6"></div>
-					<div class="col-xs-12 col-sm-6 margin-bottom-20 margin-top-20">
+					<div class="col-xs-12 margin-bottom-20 margin-top-20">
 						<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynard-7" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
 						<script>
 							(function(){
