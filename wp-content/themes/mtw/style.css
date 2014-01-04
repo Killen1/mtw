@@ -304,6 +304,17 @@ SINGLE POST PAGE
 .fa-3{
   font-size: 4em;
 }
+/*======
+BAND
+========*/
+.member-photo img{
+  position: relative;
+}
+.mouse-enter{
+  position: absolute;
+  top: 0;
+}
+
 /*========
 FOOTER
 ==========*/
