@@ -35,8 +35,8 @@
 								<?/* This will not work on localHost*/?>
 								<?php// echo do_shortcode('[fbcomments][fbcomments url="http://peadig.com/wordpress-plugins/facebook-comments/" width="375" count="off" num="3" countmsg="wonderful comments!"]'); ?>
 								<div class="post-nav">
-									<?php previous_post_link('%link', '<div id="prev-post" class="pull-right margin-bottom-20"><i class="fa fa-chevron-right fa-3"></i></div>') ?>
-									<?php next_post_link('%link', '<div id="next-post" class="pull-left margin-bottom-20"><i class="fa fa-chevron-left fa-3"></i></div>') ?>
+									<?php previous_post_link('%link', '<div id="prev-post" class="pull-right margin-bottom-20"><i class="fa fa-chevron-right fa-3"></i></div>', $excluded_categories = '3') ?>
+									<?php next_post_link('%link', '<div id="next-post" class="pull-left margin-bottom-20"><i class="fa fa-chevron-left fa-3"></i></div>', $excluded_categories = '3') ?>
 								</div>
 							</div>
 							<div class="col-sm-1"></div>

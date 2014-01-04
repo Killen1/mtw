@@ -10,7 +10,8 @@
 ?>
 <!DOCTYPE html>
 <head>
-	<title>Maynard and The Walnut</title> 
+	<title><?php if(is_home()):?><?php bloginfo('name'); ?><?else: ?><?php wp_title(' '); ?> | <?php bloginfo('name'); ?><?php endif;?></title>
+	<link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon"> 
 	<link rel="stylesheet" href="<?php echo SITE_ROOT ?>style.css">
 	<link href="http://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo SITE_ROOT ?>bootstrap.min.css">
