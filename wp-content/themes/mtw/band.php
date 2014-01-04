@@ -12,30 +12,30 @@ get_header(); ?>
 		<div id="band-wrapper">
 			<div class="row">
 				<div class="col-xs-12 col-md-6 col-lg-4 margin-bottom-20">
-					<legend>Band Memebers</legend>
+					<h1>Band Members</h1>
 					<div class="row">
-						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-10">
+						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
 							<img src="http://placehold.it/150x150" alt="">
 						</div>
-						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-10">
+						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
 							<img src="http://placehold.it/150x150" alt="">
 						</div>
-						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-10">
+						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
 							<img src="http://placehold.it/150x150" alt="">
 						</div>
-						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-10">
+						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
 							<img src="http://placehold.it/150x150" alt="">
 						</div>
-						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-10">
+						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
 							<img src="http://placehold.it/150x150" alt="">
 						</div>
-						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-10">
+						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
 							<img src="http://placehold.it/150x150" alt="">
 						</div>
 					</div>
 				</div>	
 				<div class="col-xs-12 col-md-6 col-lg-8">
-					<legend>Biography</legend>
+					<h1>Biography</h1>
 					<div class="band-bio">
 						<p>Maynard & The Walnut is an acoustic folk-rock group out of Boulder, Colorado who form their sound from a variety of influences, ranging from traditional folk to independent rock. Initially composed of Nathan Killen on Mandolin, Alex Courtney on Guitar, Cameron Nelson on Vocals, and Caleb Nelson on Banjo, they played their first open mic night in August of 2012. Soon after, they met CSU student and trumpet extraordinaire Timmy Johnson and began booking local venues around Boulder, Denver, Fort Collins, and Durango.<br><br>
 
