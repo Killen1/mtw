@@ -14,24 +14,19 @@ get_header(); ?>
 				<div class="col-xs-12 col-md-6 col-lg-4 margin-bottom-20">
 					<h1>Band Members</h1>
 					<div class="row">
-						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
-							<img src="http://placehold.it/150x150" alt="">
-						</div>
-						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
-							<img src="http://placehold.it/150x150" alt="">
-						</div>
-						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
-							<img src="http://placehold.it/150x150" alt="">
-						</div>
-						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
-							<img src="http://placehold.it/150x150" alt="">
-						</div>
-						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
-							<img src="http://placehold.it/150x150" alt="">
-						</div>
-						<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
-							<img src="http://placehold.it/150x150" alt="">
-						</div>
+						<?php $bandpic = new WP_Query('category_name=Band Photo'); ?>
+						<?php if($bandpic->have_posts()) : ?>
+							<?php while($bandpic->have_posts()): $bandpic->the_post(); ?>
+								<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
+									<div class="member-photo">
+										<img src="http://placehold.it/150x150" alt="">
+										<div class="mouse-enter" style="display: none;">
+											<h3><?php the_title(); ?></h3>
+										</div>	
+									</div>		
+								</div>
+							<?php endwhile;?>
+						<?php endif;?>	
 					</div>
 				</div>	
 				<div class="col-xs-12 col-md-6 col-lg-8">
@@ -46,4 +41,14 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+<script>
+	jQuery(document).ready(function($) {
+		$('.member-photo').on('mouseenter', function(){
+			$(this).children('.mouse-enter').show();
+		});
+		$('.member-photo').on('mouseleave', function(){
+			$(this).children('.mouse-enter').hide();
+		});
+	});
+</script>
 <?php get_footer(); ?>
