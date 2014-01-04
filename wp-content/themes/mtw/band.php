@@ -21,7 +21,7 @@ get_header(); ?>
 									<div class="member-photo">
 										<img src="http://placehold.it/150x150" alt="">
 										<div class="mouse-enter" style="display: none;">
-											<h3><?php the_title(); ?></h3>
+											<h3 class="margin-top-20 text-center"><?php the_title(); ?></h3>
 										</div>	
 									</div>		
 								</div>

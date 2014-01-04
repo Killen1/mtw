@@ -325,6 +325,9 @@ BAND
 .mouse-enter{
   position: absolute;
   top: 0;
+  background-image: url('images/grey_trans.png');
+  width: 150px;
+  height: 150px;
 }
 
 /*========
