@@ -346,6 +346,15 @@ FOOTER
   .social-media{
     display: none;
   }
+  .main-logo{
+    position: absolute;
+    top: 65px;
+    left: 10px;
+    z-index: 7;
+    background: url(images/mtw-logo-sm.png) no-repeat;
+    width: 100px;
+    height: 107px;
+  }
 }
 @media (min-width: 768px) {
   .social-media-footer{
