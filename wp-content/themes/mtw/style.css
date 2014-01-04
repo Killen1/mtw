@@ -317,8 +317,14 @@ FOOTER
   .text-center-xs{
     text-align: center;
   }
+  .social-media{
+    display: none;
+  }
 }
 @media (min-width: 768px) {
+  .social-media-footer{
+    display: none;
+  }
 
 }
 @media (min-width: 992px) {

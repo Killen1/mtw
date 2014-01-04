@@ -9,7 +9,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="social-media text-center col-xs-12">
+			<div class="social-media-footer text-center col-xs-12">
 				<ul class="addthis_toolbox addthis_32x32_style addthis_default_style padding-0 list-unstyled list-inline">
 					<li><a class="addthis_button_facebook_follow" addthis:userid="MaynardandTheWalnut"><i class="fa fa-facebook fa-lg"></i></a></li>
 					<li><a class="addthis_button_twitter_follow" addthis:userid="MaynardWalnut"><i class="fa fa-twitter fa-lg"></i></a></li>
