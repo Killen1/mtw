@@ -150,6 +150,18 @@ HELPER CLASSES
 /*===============
 HEADER
 ================*/
+#width-wrapper{
+  position: relative;
+}
+.main-logo{
+  position: absolute;
+  top: 65px;
+  left: 10px;
+  z-index: 7;
+  background: url(images/mtw-logo.png) no-repeat;
+  width: 200px;
+  height: 207px;
+}
 #fixed-menu{
   position: fixed;
   top: 0;
