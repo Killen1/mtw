@@ -88,6 +88,7 @@
 				<ul class="pager_list padding-0"></ul>
 			</div>
 		</div>
+		<div class="main-logo"></div>
 		<script>
 			jQuery(document).ready(function($) {
 				$('#slider').imageSlider({
