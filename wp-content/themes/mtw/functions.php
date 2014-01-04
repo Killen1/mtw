@@ -24,7 +24,6 @@ function organizedthemes_browser_body_class($classes) {
 }
 add_filter('body_class','organizedthemes_browser_body_class');
 
-
 //Function for the post thumbnail Title
 function the_post_thumbnail_caption( $post_id ) {
   $thumbnail_id    = get_post_thumbnail_id($post_id);
@@ -33,25 +32,21 @@ function the_post_thumbnail_caption( $post_id ) {
     return $thumbnail_image[0]->post_excerpt;
   }
 }
-
 //Pagination function for News page
 function news_pagination() {
   if( is_singular() )
     return;
 
   global $wp_query;
-
   /** Stop execution if there's only 1 page */
   if( $wp_query->max_num_pages <= 1 )
     return;
 
   $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
   $max   = intval( $wp_query->max_num_pages );
-
   /** Add current page to the array */
   if ( $paged >= 1 )
     $links[] = $paged;
-
   /** Add the pages around the current page to the array */
   if ( $paged >= 3 ) {
     $links[] = $paged - 1;
@@ -64,7 +59,6 @@ function news_pagination() {
   }
 
   echo '<div id="news-pagination" class="text-center clearfix margin-top-20 margin-bottom-20"><ul class="pagination">' . "\n";
-
   /** Previous Post Link */
   if ( get_previous_posts_link() )
     printf( '<li>%s</li>' . "\n", get_previous_posts_link('«') );
@@ -76,20 +70,18 @@ function news_pagination() {
     printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
 
     if ( ! in_array( 2, $links ) )
-      echo '<li>…</li>';
+      echo '<li>...</li>';
   }
-
   /** Link to current page, plus 2 pages in either direction if necessary */
   sort( $links );
   foreach ( (array) $links as $link ) {
     $class = $paged == $link ? ' class="active"' : '';
     printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
   }
-
   /** Link to last page, plus ellipses if necessary */
   if ( ! in_array( $max, $links ) ) {
     if ( ! in_array( $max - 1, $links ) )
-      echo '<li>…</li>' . "\n";
+      echo '<li><a href="#">…</a></li>' . "\n";
 
     $class = $paged == $max ? ' class="active"' : '';
     printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
@@ -113,8 +105,5 @@ function word_truncate_excerpt( $limit ){
   }
   return $excerpt;
 }
-
-
-
 
 ?>

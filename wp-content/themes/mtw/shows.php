@@ -13,7 +13,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-sm-1"></div>
 				<div class="col-xs-12 col-sm-10">
-					<h1 class="text-center">Show Dates</h1>
+					<h1 class="text-center padding-bottom-10">Show Dates</h1>
 					<div class="row">
 						<div class="show-type col-xs-6">
 							<ul class="tabs padding-0 list-unstyled">

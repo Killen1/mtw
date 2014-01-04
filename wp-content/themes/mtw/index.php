@@ -6,15 +6,15 @@
 			<?php if($latest_news->have_posts()) : ?>
 				<?php while($latest_news->have_posts()) : ?>
 					<?php $latest_news->the_post(); ?>
-					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<div class="latest-news col-xs-12 col-sm-12 col-md-8 col-lg-8">
 						<div class="row">
 							<div class="col-sm-12">
 								<h2>Latest News</h2>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row">  
 							<div class="col-sm-5 col-md-6 col-lg-5 margin-bottom-10">
-								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
+								<a href="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" title="<?php the_title(); ?>">
 									<?php echo get_the_post_thumbnail( $post_id, array(300,300), array('alt' => 'News Image') ); ?>
 								</a>
 							</div>
@@ -22,15 +22,15 @@
 								<h3 class="margin-top-0">
 									<?php
 										$tit = the_title('','',FALSE);
-										echo substr($tit, 0, 30);
-										if (strlen($tit) > 30) echo " ...";
+										echo substr($tit, 0, 27);
+										if (strlen($tit) > 27) echo " ...";
 									?>  
 								</h3>
 								<p><i class="fa fa-calendar"></i> <?php the_date();?></p>
 								<p>
 									<?php echo word_truncate_excerpt(55); ?>	
 								</p>
-								<h5><a href="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" title="Read More">Read More</a></h5>
+								<h5><a href="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" title="Read More">Read More <i class="fa fa-arrow-right"></i></a></h5>
 							</div>
 						</div>
 					</div>
@@ -54,24 +54,28 @@
 					<?else:?>
 						<p>Sorry, We have no upcoming shows.</p>
 					<?php endif; ?>
-					<h5><a href="<?php echo MTW_ROOT ?>shows" title="More Shows">More Shows</a></h5>
+					<h5><a href="<?php echo MTW_ROOT ?>shows" title="More Shows">More Shows <i class="fa fa-arrow-right"></i></a></h5>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-12 padding-0">
+		<div class="col-sm-12">
 			<div id="wrapper" class="bg-fabric">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 ">
 							<div class="row">
 								<div class="col-xs-12">
-									<div class="video margin-top-20">
-										<div id="youtube-video">
-											<img class="img-rounded" src="http://placehold.it/350x350" data-toggle="modal" data-target="#myModal">
+									<?php mc4wp_form(); ?>
+								</div>
+								<div class="col-xs-12">
+									<div class="video">
+										<div id="youtube-video" class="text-center-xs">
+											<?//This is the image for the youtube Video Goes!?>
+											<a href="#"><img class="img-rounded" src="http://placehold.it/350x350" data-toggle="modal" data-target="#myModal"></a>
 										</div>
-										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 										  	<div class="modal-dialog">
 											    <div class="modal-content">
 											        <div class="modal-body">
@@ -83,18 +87,15 @@
 									</div>
 									<script>
 									    $('#youtube-video img').click(function () {
+									    	//This is were you put the youtube video url It must be in this format to play --> http://www.youtube.com/v/<video_id>&amp;autoplay=1
 									        var src = 'http://www.youtube.com/v/39EH99I1gg8&amp;autoplay=1';
-									        $('#myModal').modal('show');
-									        $('#myModal iframe').attr('src', src);
+									      	$('#video-modal').modal('show');
+									        $('#video-modal iframe').attr('src', src);
 									    });
-									    $('#myModal').click(function () {
-									        $('#myModal iframe').removeAttr('src');
+									    $('#video-modal').click(function () {
+									        $('#video-modal iframe').removeAttr('src');
 									    });
 									</script>
-								</div>
-								<div class="col-xs-12">
-									<h3 class="wht">Join Our Mailing List!</h3>
-									<?php mc4wp_form(); ?>
 								</div>
 							</div>
 						</div>

@@ -11,22 +11,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Maynard and The Walnut</title>
-<link rel="stylesheet" href="<?php echo SITE_ROOT ?>style.css">
-<link rel="stylesheet" href="<?php echo SITE_ROOT ?>gigpress.css">
-<link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="<?php echo SITE_ROOT ?>bootstrap.min.css">
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link href="http://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
-<meta property="og:title" content="<?php the_title(); ?>">
-<meta property="og:description" content="<?php the_excerpt(); ?>">
-<script src="<?php echo SITE_ROOT ?>js/jquery-1.10.2.min.js"></script> 
-<script src="<?php echo SITE_ROOT ?>js/bootstrap.min.js"></script>
-<script src="<?php echo SITE_ROOT ?>js/slide-gallery.js"></script>
-<script src="<?php echo SITE_ROOT ?>js/soundcloud.js"></script>
-<?php if ( is_page('shows')): ?><script src="<?php echo SITE_ROOT ?>js/gig-tabs.js"></script><? endif; ?>
-<?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/jquery.validate.pack.js"></script><? endif; ?>
-<?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/bootstrap-contact.js"></script><? endif; ?>
+	<title><?php if(is_home()):?><?php bloginfo('name'); ?><?else: ?><?php wp_title(' '); ?> | <?php bloginfo('name'); ?><?php endif;?></title> 
+	<link rel="stylesheet" href="<?php echo SITE_ROOT ?>style.css">
+	<link rel="stylesheet" href="<?php echo SITE_ROOT ?>gigpress.css">
+	<link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="<?php echo SITE_ROOT ?>bootstrap.min.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+	<meta property="og:title" content="<?php the_title(); ?>">
+	<meta property="og:description" content="<?php the_excerpt(); ?>">
+	<script src="<?php echo SITE_ROOT ?>js/jquery-1.10.2.min.js"></script> 
+	<script src="<?php echo SITE_ROOT ?>js/bootstrap.min.js"></script>
+	<script src="<?php echo SITE_ROOT ?>js/slide-gallery.js"></script>
+	<?php if ( is_home() || is_page('music')): ?><script src="<?php echo SITE_ROOT ?>js/soundcloud.js"></script><? endif; ?>
+	<?php if ( is_page('shows')): ?><script src="<?php echo SITE_ROOT ?>js/gig-tabs.js"></script><? endif; ?>
+	<?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/jquery.validate.pack.js"></script><? endif; ?>
+	<?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/bootstrap-contact.js"></script><? endif; ?>
+	<?php if ( is_page('photos')): ?><script src="<?php echo SITE_ROOT ?>js/instafeed.min.js"></script><? endif; ?>
 </head>
 <body <?php body_class(); ?>>
 <div id="width-wrapper">
@@ -51,7 +52,7 @@
 							<li <?php if ( is_page('music') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>music">Music</a></li>
 							<li <?php if ( is_page('shows') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>shows">Shows</a></li>
 							<li <?php if ( is_page('news') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT; ?>news">News</a></li>
-							<li <?php if ( is_page('gallery') ) {echo " class=\"active\"";}?>><a href="#">Gallery</a></li>
+							<li <?php if ( is_page('photos') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT; ?>photos">Photos</a></li>
 							<li <?php if ( is_page('contact') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>contact">Contact</a></li>
 							<li <?php if ( is_page('band-3') ) {echo " class=\"active\"";}?>><a href="<?php echo MTW_ROOT ?>band">Band</a></li>
 						</ul>
@@ -77,16 +78,6 @@
 				<ul class="pager_list padding-0"></ul>
 			</div>
 		</div>
-		<!-- Social media Icons Can go anywhere
-		<div class="social-media text-center">
-			<ul class="padding-0 list-unstyled list-inline">
-				<li><a href="https://www.facebook.com/MaynardandTheWalnut" target="_blank" title="Facebook"><i class="fa fa-facebook fa-lg"></i></a></li>
-				<li><a href="https://twitter.com/MaynardWalnut" target="_blank" title="Twitter"><i class="fa fa-twitter fa-lg"></i></a></li>
-				<li><a href="http://instagram.com/maynardandthewalnut" target="_blank" title="Instagram"><i class="fa fa-instagram fa-lg"></i></a></li>
-				<li><a href="http://www.youtube.com/user/MaynardandTheWalnut" target="_blank" title="Youtube"><i class="fa fa-youtube fa-lg"></i></a></li>
-			</ul>
-		</div>
-		-->
 		<script>
 			jQuery(document).ready(function($) {
 				$('#slider').imageSlider({

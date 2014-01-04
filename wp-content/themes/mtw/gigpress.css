@@ -1,6 +1,9 @@
 /*===============================
 GigPress Plugin style Overrides
 ================================*/
+td,th{
+	font-family: Georgia, 'Times New Roman', serif !important;
+}
 
 /* By default this is an h3 that appears above each artist's list of shows */
 h3.gigpress-artist-heading  {	
