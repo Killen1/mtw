@@ -37,13 +37,13 @@ tr.gigpress-header th {
 	padding: 6px 8px;
 	vertical-align: middle;
 	text-align: left;
-	border-bottom: 1px solid #CCC;
+	border-bottom: 1px solid #262626;
 }
 
 /* This is for the tour name header cells */
 th.gigpress-heading {
-	background-color: #EEE;
-	border-bottom: 1px solid #CCC;
+	background-color: #E2CEB3;
+	border-bottom: 1px solid #262626;
 }
 
 /* This is for the tour name headings, whichever one you're using */
@@ -100,19 +100,18 @@ td.gigpress-country {
 
 /* Style for rows within a tour */
 tr.gigpress-tour td {
-	background-color: #F6F6F6;
+	background-color: #E2CEB3;
 }
 
 /* Style for the first row after a tour ends in the list */
 tr.gigpress-divider.gigpress-row td {
-	border-top: 2px solid #CCC;
 }
 
 /* The secondary row for each show, contains time, admission, etc */
 tr.gigpress-info td {
 	font-size: 90%;
 	color: #333;
-	border-bottom: 1px solid #CCC;
+	border-bottom: 1px solid #262626;
 }
 
 /* Fix for themes that hide .description */
@@ -205,7 +204,7 @@ div.gigpress-calendar-links {
 	padding: 6px 8px;
 	font-size: 11px;
 	line-height: 16px;
-	border: 1px solid #CCC;
+	border: 1px solid #262626;
 	border-width: 1px 1px 1px 0;
 }
 
@@ -243,7 +242,7 @@ ul.gigpress-listing {
 }
 
 .gigpress-wrap ul.gigpress-listing li{
-	border-top: 1px solid #000;
+	border-top: 1px solid #262626;
 	padding: 15px 0 15px 0;
 }
 /* Generic styles for the list items within */

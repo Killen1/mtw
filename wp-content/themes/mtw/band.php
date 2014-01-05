@@ -19,14 +19,15 @@ get_header(); ?>
 							<?php while($bandpic->have_posts()): $bandpic->the_post(); ?>
 								<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
 									<div class="member-photo">
-										<img src="http://placehold.it/150x150" alt="">
+										<?php echo get_the_post_thumbnail( $post_id, array(150,150), array('alt' => 'Band Member') ); ?>
 										<div class="mouse-enter" style="display: none;">
-											<h3 class="margin-top-20 text-center"><?php the_title(); ?></h3>
+											<h3 class="wht margin-top-20 text-center"><?php the_title(); ?></h3>
 										</div>	
 									</div>		
 								</div>
 							<?php endwhile;?>
-						<?php endif;?>	
+						<?php endif;?>
+						<?php wp_reset_query(); ?>	
 					</div>
 				</div>	
 				<div class="col-xs-12 col-md-6 col-lg-8">

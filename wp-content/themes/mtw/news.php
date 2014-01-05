@@ -55,7 +55,7 @@ get_header(); ?>
 									<?php the_content();?>
 								</div>
 								<div class="text-center">
-									<p><a href="<?php the_permalink(); ?>">Comment <i class="fa fa-comment"></i></a> | <?php comments_number(); ?></p>
+									<p><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Comment <i class="fa fa-comment"></i></a> | <?php comments_number(); ?></p>
 								</div>
 							</div>
 						</div>

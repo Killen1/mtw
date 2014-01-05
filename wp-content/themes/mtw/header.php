@@ -32,7 +32,26 @@
 <body <?php body_class(); ?>>
 <div id="width-wrapper">
 	<div class="row">
-		<div id="fixed-menu">
+		<div id="slider" class="col-sm-12">
+			<?php// if ( is_home()) ?>
+				<img class="slide" src="http://placehold.it/1202x552" alt="">
+				<img class="slide" src="http://placehold.it/1202x551" alt="">
+				<img class="slide" src="http://placehold.it/1202x550" alt="">
+			<?//elseif ( is_page('music') ) :?>
+			<?//elseif ( is_page('shows') ) :?>
+			<?//elseif ( is_page('news') ) :?>
+			<?//elseif ( is_page('photos') ) :?>
+			<?//elseif ( is_page('contact') ) :?>
+			<?//elseif ( is_page('band') ) :?>	
+			<?//else:?>
+
+			<?php// endif; ?>
+			<div class="controls text-center">
+				<ul class="pager_list padding-0"></ul>
+			</div>
+		</div>
+		<div class="main-logo"></div>
+
 			<nav id="main-nav" class="navbar navbar-default col-sm-12 margin-0" role="navigation">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header col-xs-2">
@@ -63,32 +82,14 @@
 								<li><a class="addthis_button_instagram_follow" addthis:userid="maynardandthewalnut"><i class="fa fa-instagram fa-lg"></i></a></li>
 								<li><a class="addthis_button_youtube_follow" addthis:userid="MaynardandTheWalnut"><i class="fa fa-youtube fa-lg"></i></a></li>
 								<li><a class="addthis_button_vimeo_follow" addthis:userid="MaynardandTheWalnut"><i class="fa fa-vimeo-square fa-lg"></i></a></li>
+								<li><a class="rss" href="<?php echo MTW_ROOT ?>feed" target="_blank" title="RSS Feed"><i class="fa fa-rss-square fa-lg"></i></a></li>
 							</ul>
 							<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526da6b84c40c531"></script>
 						</div>
 					</div>
 				</div>
 			</nav>
-		</div>
-		<div id="slider" class="col-sm-12">
-			<?php if ( is_home()): ?>
-				<img class="slide" src="http://placehold.it/1202x552" alt="">
-				<img class="slide" src="http://placehold.it/1202x551" alt="">
-				<img class="slide" src="http://placehold.it/1202x550" alt="">
-			<?elseif ( is_page('music') ) :?>
-				<img class="slide" src="http://placehold.it/1202x555" alt="">
-				<img class="slide" src="http://placehold.it/1202x554" alt="">
-				<img class="slide" src="http://placehold.it/1202x553" alt="">
-			<?else:?>
-				<img class="slide" src="http://placehold.it/1202x556" alt="">
-				<img class="slide" src="http://placehold.it/1202x557" alt="">
-				<img class="slide" src="http://placehold.it/1202x558" alt="">
-			<?php endif; ?>
-			<div class="controls text-center">
-				<ul class="pager_list padding-0"></ul>
-			</div>
-		</div>
-		<div class="main-logo"></div>
+	
 		<script>
 			jQuery(document).ready(function($) {
 				$('#slider').imageSlider({
@@ -96,5 +97,6 @@
 					fadeDur: 800
 				});
 			});
+
 		</script>
 	</div>	
