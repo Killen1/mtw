@@ -64,14 +64,14 @@
 			<div id="wrapper" class="bg-fabric">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-6 ">
+						<div class="col-xs-12 col-sm-6 col-lg-4">
 							<div class="row">
-								<div class="col-xs-12">
+								<div class="col-xs-12 margin-bottom-30">
 									<?php mc4wp_form(); ?>
 								</div>
 								<div class="col-xs-12">
 									<div class="video">
-										<div id="youtube-video" class="text-center-xs">
+										<div id="youtube-video">
 											<?//This is the image for the youtube Video Goes!?>
 											<a href="#"><img class="img-rounded" src="http://placehold.it/350x350" data-toggle="modal" data-target="#myModal"></a>
 										</div>
@@ -99,8 +99,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6 margin-bottom-20 margin-top-20">
-							<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynard-7" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+						<div class="col-xs-12 col-sm-6 col-lg-8 margin-bottom-20 margin-top-20">
+							<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynardandthewalnut" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
 							<script>
 								(function(){
 								    var widgetIframe = document.getElementById('sound-cloud'),

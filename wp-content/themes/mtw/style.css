@@ -144,6 +144,9 @@ HELPER CLASSES
 .padding-bottom-10{
   padding-bottom: 10px !important;
 }
+.padding-left-15{
+  padding-left: 15px !important;
+}
 .wht{
   color:#fff;
 }
@@ -162,20 +165,18 @@ HEADER
   width: 200px;
   height: 207px;
 }
-#fixed-menu{
+.fixed-menu{
+  z-index: 9999;
   position: fixed;
   top: 0;
-  z-index: 10;
   width: 103%;
-  margin: 0 0 0 0;
 }
 #bs-collapse-1 ul{
   font-family: Georgia, 'Times New Roman', serif !important;
   font-size: 16px;
 }
 #slider{
-  position: relative;
-  padding-top: 45%;
+  padding-top: 40%;
   overflow: hidden;
 }
 #slider .slide{
@@ -216,6 +217,24 @@ HEADER
 #main-nav .social-media a{
   color:#fff;
 }
+.fa-facebook:hover{
+  color:#425f9c;
+}
+.fa-twitter:hover{
+  color: #00C0F7;
+}
+.fa-instagram:hover{
+  color:#ded3c1;
+}
+.fa-youtube:hover{
+  color:#E42D27;
+}
+.fa-vimeo-square:hover{
+  color:#3084b4;
+}
+.fa-rss-square:hover{
+  color:#f59c37;
+}
 /*========
 INDEX
 ==========*/
@@ -252,12 +271,20 @@ padding-bottom: 10px;
 .music-post-wrapper .addthis_toolbox{
   width:268px;
 }
+#mc4wp_email{
+  width: 280px;
+}
 #youtube-video a img{
   max-width: 350px;
 }
 /*========
 MUSIC
 ==========*/
+.music-post-wrapper img{
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
 /*=========
 SHOWS
 ===========*/
@@ -268,32 +295,14 @@ SHOWS
 .current:hover{
   text-decoration: underline;
 }
-.fa-facebook:hover{
-  color:#425f9c;
-}
-.fa-twitter:hover{
-  color: #00C0F7;
-}
-.fa-instagram:hover{
-  color:#ded3c1;
-}
-.fa-youtube:hover{
-  color:#E42D27;
-}
-.fa-vimeo-square:hover{
-  color:#3084b4;
-}
-.fa-rss-square:hover{
-  color:#f59c37;
-}
 .music-social-media .addthis_toolbox {
   width: 40px;
 }
-.addthis_default_style .addthis_separator, 
-.addthis_default_style .at300b, 
-.addthis_default_style .at300bo, 
-.addthis_default_style .at300m, 
-.addthis_default_style .at300bs {
+#main-nav .addthis_default_style .addthis_separator, 
+#main-nav .addthis_default_style .at300b, 
+#main-nav .addthis_default_style .at300bo, 
+#main-nav .addthis_default_style .at300m, 
+#main-nav .addthis_default_style .at300bs {
   float: none !important;
 }
 /*========
@@ -301,6 +310,11 @@ NEWS
 ==========*/
 .news-post-wrapper{
   border-bottom: 1px solid #262626;
+}
+.news-image img{
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 /*=========
 Photos
@@ -357,6 +371,13 @@ BAND
 /*========
 FOOTER
 ==========*/
+.social-media-footer .addthis_default_style .addthis_separator, 
+.social-media-footer .addthis_default_style .at300b, 
+.social-media-footer .addthis_default_style .at300bo, 
+.social-media-footer .addthis_default_style .at300m, 
+.social-media-footer .addthis_default_style .at300bs {
+  float: none !important;
+}
 /*============================
 @media querys custom overrides  
 ==============================*/

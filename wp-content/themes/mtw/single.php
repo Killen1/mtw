@@ -21,8 +21,8 @@
 									</div>
 									<div class="clearfix margin-right-10 margin-bottom-10">
 										<div class="addthis_toolbox addthis_default_style pull-right">
-											<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" addthis:title="<?php the_title(); ?>"></a>
-											<a class="addthis_button_tweet" addthis:url="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" addthis:title="<?php the_title(); ?>"></a>
+											<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="<?php the_permalink(); ?>" addthis:title="<?php the_title(); ?>"></a>
+											<a class="addthis_button_tweet" addthis:url="<?php the_permalink(); ?>" addthis:title="<?php the_title(); ?>"></a>
 											<a class="addthis_counter addthis_pill_style"></a>
 										</div>
 										<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>

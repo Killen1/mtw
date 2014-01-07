@@ -56,7 +56,7 @@ get_header(); ?>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 margin-bottom-20 margin-top-20">
-						<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynard-7" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+						<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynardandthewalnut" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
 						<script>
 							(function(){
 							    var widgetIframe = document.getElementById('sound-cloud'),

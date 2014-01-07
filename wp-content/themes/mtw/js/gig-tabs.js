@@ -19,4 +19,4 @@ function init_tabs(){
 		this.blur();
 		return false;
 	});
-};
+}; 
