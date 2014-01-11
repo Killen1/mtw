@@ -26,8 +26,8 @@ get_header(); ?>
 											<h3 class="margin-top-0"><?php the_title(); ?></h3>
 											<!-- AddThis Button BEGIN -->
 											<div class="addthis_toolbox addthis_default_style">
-												<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="<?php echo MTW_ROOT ?>music#<?php the_ID(); ?>" addthis:title="<?php the_title(); ?>"></a>
-												<a class="addthis_button_tweet" addthis:url="<?php echo MTW_ROOT ?>music#<?php the_ID(); ?>" addthis:title="<?php the_title(); ?>"></a>
+												<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="<?php the_permalink(); ?>" addthis:title="<?php the_title(); ?>"></a>
+												<a class="addthis_button_tweet" addthis:url="<?php the_permalink(); ?>" addthis:title="<?php the_title(); ?>"></a>
 												<a class="addthis_counter addthis_pill_style"></a>
 											</div>
 											<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>

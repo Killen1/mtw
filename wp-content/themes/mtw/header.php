@@ -30,7 +30,7 @@
 	<?php if ( is_page('photos')): ?><script src="<?php echo SITE_ROOT ?>js/instafeed.min.js"></script><? endif; ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="width-wrapper">
+<div id="width-wrapper"><!--#width-wrapper closes in Footer-->
 	<div class="row">
 		<div id="slider" class="col-sm-12">
 			<?php// if ( is_home()) ?>
@@ -44,7 +44,6 @@
 			<?//elseif ( is_page('contact') ) :?>
 			<?//elseif ( is_page('band') ) :?>	
 			<?//else:?>
-
 			<?php// endif; ?>
 			<div class="controls text-center">
 				<ul class="pager_list padding-0"></ul>
@@ -52,7 +51,6 @@
 		</div>
 		<div class="main-logo"></div>
 		<nav id="main-nav" class="navbar navbar-default col-sm-12 margin-0" role="navigation">
-			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header col-xs-2">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-collapse-1">
 					<span class="sr-only"></span>
@@ -62,7 +60,6 @@
 					<span class="icon-bar"></span>
 				</button>
 			</div>
-			<!--Collect the nav links, forms, and other content for toggling -->
 			<div class="col-sm-12">
 				<div class="collapse navbar-collapse navbar-ex1-collapse" id="bs-collapse-1">
 					<ul class="nav navbar-nav">
@@ -90,19 +87,29 @@
 		</nav>
 		<script>
 			jQuery(document).ready(function($){
-	    
-			    var nav = $('.static-menu');
+	    		//fixed menu
+			    //var nav = $('.static-menu');
 			    
-			    $(window).scroll(function () {
-			        if ($(this).scrollTop() > 136) {
-			            nav.addClass("f-nav");
-			        } else {
-			            nav.removeClass("f-nav");
-			        }
-			    });
-			 
-			});
-			jQuery(document).ready(function($) {
+			   // $(window).scroll(function () {
+			    //    if ($(this).scrollTop() > 136) {
+			    //        nav.addClass("f-nav");
+			    //    } else {
+			    //        nav.removeClass("f-nav");
+			    //    }
+			    //});
+			
+				//For mobile toggle
+				$('.navbar-toggle').click(function(e) {
+				    e.stopPropagation();
+				    $('#bs-collapse-1').toggleClass('in');
+				});
+				$(document).click(function (e) {
+				    if(!$(e.target).closest('#bs-collapse-1').length){
+				        $('#bs-collapse-1').removeClass('in');
+				    }
+				});
+
+				//slideshow
 				$('#slider').imageSlider({
 					slideDur: 5000,
 					fadeDur: 800

@@ -1,1 +1,1 @@
-This is a website designed by Nathan Killen and Alexander Courtney of Maynard and the Walnut. All origiinal content, photos, and music belong to Maynard and the Walnut and the band's affiliates. Rock On.
+This is a website designed and developed by Nathan Killen and Alexander Courtney of Maynard and the Walnut. All origiinal content, photos, and music belong to Maynard and the Walnut and the band's affiliates. Rock On.
