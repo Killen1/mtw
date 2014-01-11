@@ -4,8 +4,6 @@
  * @package WordPress
  * @subpackage Default_Theme
  */
-//{debug}	
-// echo "<pre>"; print_r(); die();
 get_header(); ?>
 <div class="bg-paper">
 	<div class="container">

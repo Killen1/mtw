@@ -4,8 +4,6 @@
  * @package WordPress
  * @subpackage Default_Theme
  */
-//{debug}	
-// echo "<pre>"; print_r(); die();
 get_header(); ?>
 <div class="bg-paper">	
 	<div class="container">	
@@ -15,16 +13,16 @@ get_header(); ?>
 				<?php $music = new WP_Query('category_name=music'); ?>
 				<?php if($music->have_posts()) : ?>
 					<?php while($music->have_posts()): $music->the_post(); ?>
+					<? //echo "<pre>"; print_r($music); die();?>
 						<div id="<?php the_ID(); ?>" class="music-post-wrapper margin-left-20 margin-top-20">
 							<div class="row">
-								<div class="col-xs-12 col-sm-5 col-md-4">
+								<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
 									<?php echo get_the_post_thumbnail( $post_id, array(250,250), array('alt' => 'Music Image') ); ?>
 								</div>
-								<div class="col-xs-12 col-sm-7 col-md-8">
+								<div class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
 									<div class="row">
 										<div class="col-xs-12">
 											<h3 class="margin-top-0"><?php the_title(); ?></h3>
-											<!-- AddThis Button BEGIN -->
 											<div class="addthis_toolbox addthis_default_style">
 												<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="<?php the_permalink(); ?>" addthis:title="<?php the_title(); ?>"></a>
 												<a class="addthis_button_tweet" addthis:url="<?php the_permalink(); ?>" addthis:title="<?php the_title(); ?>"></a>
@@ -32,7 +30,6 @@ get_header(); ?>
 											</div>
 											<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 											<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526da6b84c40c531"></script>
-											<!-- AddThis Button END -->
 										</div>
 									</div>
 									<div class="row">

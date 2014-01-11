@@ -1,10 +1,14 @@
-<?php get_header(); ?>
+<?php
+//debug 
+//echo "<pre>"; print_r($_SERVER); die();
+get_header(); ?>
 <div class="bg-paper">
 	<div class="container margin-bottom-20">
 		<div class="row">
 			<?php $latest_news = new WP_Query('cat=2&showposts=1'); ?>
 			<?php if($latest_news->have_posts()) : ?>
 				<?php while($latest_news->have_posts()) : ?>
+				<? //echo "<pre>"; print_r($latest_news); die();?>
 					<?php $latest_news->the_post(); ?>
 					<div class="latest-news col-xs-12 col-sm-12 col-md-8 col-lg-8">
 						<div class="row">
@@ -85,23 +89,24 @@
 										  	</div>
 										</div>
 									</div>
-									<script>
-									    $('#youtube-video img').click(function () {
-									    	//This is were you put the youtube video url It must be in this format to play --> http://www.youtube.com/v/<video_id>&amp;autoplay=1
-									        var src = 'http://www.youtube.com/v/39EH99I1gg8&amp;autoplay=1';
-									      	$('#video-modal').modal('show');
-									        $('#video-modal iframe').attr('src', src);
-									    });
-									    $('#video-modal').click(function () {
-									        $('#video-modal iframe').removeAttr('src');
-									    });
-									</script>
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-lg-8 margin-bottom-20 margin-top-20">
 							<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynardandthewalnut" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
 							<script>
+								//This is for the Youtube Video popup
+								$('#youtube-video img').click(function () {
+							    	//This is were you put the youtube video url It must be in this format to play --> http://www.youtube.com/v/<video_id>&amp;autoplay=1
+							        var src = 'http://www.youtube.com/v/39EH99I1gg8&amp;autoplay=1';
+							      	$('#video-modal').modal('show');
+							        $('#video-modal iframe').attr('src', src);
+							    });
+							    $('#video-modal').click(function () {
+							        $('#video-modal iframe').removeAttr('src');
+							    });
+
+							    //This is for SoundCloud
 								(function(){
 								    var widgetIframe = document.getElementById('sound-cloud'),
 								        widget       = SC.Widget(widgetIframe);

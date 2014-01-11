@@ -4,8 +4,6 @@
  * @package WordPress
  * @subpackage Default_Theme
  */
-//{debug}	
-//echo "<pre>"; print_r(); die();
 get_header(); ?>
 <div class="bg-paper">
 	<div class="container">
@@ -17,6 +15,7 @@ get_header(); ?>
 						<?php $bandpic = new WP_Query('category_name=Band Photo'); ?>
 						<?php if($bandpic->have_posts()) : ?>
 							<?php while($bandpic->have_posts()): $bandpic->the_post(); ?>
+							<?// echo "<pre>"; print_r($bandpic); die();?>
 								<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
 									<div class="member-photo">
 										<?php echo get_the_post_thumbnail( $post_id, array(150,150), array('alt' => 'Band Member') ); ?>

@@ -86,18 +86,28 @@
 			</div>
 		</nav>
 		<script>
-			jQuery(document).ready(function($){
-	    		//fixed menu
-			    //var nav = $('.static-menu');
-			    
-			   // $(window).scroll(function () {
-			    //    if ($(this).scrollTop() > 136) {
-			    //        nav.addClass("f-nav");
-			    //    } else {
-			    //        nav.removeClass("f-nav");
-			    //    }
-			    //});
-			
+			jQuery(document).ready(function($){	
+			    // Fixed menu on scroll
+		    	var stickyHeaderTop = $('#main-nav').offset().top;
+		    	$(window).scroll(function(){
+		    		if ( $(window).width() > 992) {
+			            if( $(window).scrollTop() > stickyHeaderTop ) {
+		                    $('#main-nav').css({position: 'fixed', top: '0px', width: '103%'});
+		                    $('#main-nav').css('display', 'block', 'z-index', '9999');
+			            } else {
+			                $('#main-nav').css({position: 'static', top: '0px', width: '100%'});
+			            }
+			        }else{
+
+			        }
+			    });
+				
+				//slideshow
+				$('#slider').imageSlider({
+					slideDur: 5000,
+					fadeDur: 800
+				});
+				
 				//For mobile toggle
 				$('.navbar-toggle').click(function(e) {
 				    e.stopPropagation();
@@ -107,12 +117,6 @@
 				    if(!$(e.target).closest('#bs-collapse-1').length){
 				        $('#bs-collapse-1').removeClass('in');
 				    }
-				});
-
-				//slideshow
-				$('#slider').imageSlider({
-					slideDur: 5000,
-					fadeDur: 800
 				});
 			});
 		</script>

@@ -4,8 +4,6 @@
  * @package WordPress
  * @subpackage Default_Theme
  */
-//{debug}	
- //echo "<pre>"; print_r($post); die();
 get_header(); ?>
 <div id="shows">
 	<div class="bg-paper">
@@ -22,14 +20,12 @@ get_header(); ?>
 							</ul>
 						</div>
 						<div class="music-social-media col-xs-6">
-							<!-- AddThis Button BEGIN -->
 							<div class="addthis_toolbox addthis_default_style pull-right">
 								<a class="addthis_button_preferred_1"></a>
 								<a class="addthis_button_preferred_2"></a>
 							</div>
 							<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 							<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526da6b84c40c531"></script>
-							<!-- AddThis Button END -->
 						</div>
 					</div>
 					<div class="tabs-content-wrap">
