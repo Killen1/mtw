@@ -1,18 +1,12 @@
 body,html{
-  
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
 }
 h1{
-  font-family: 'Playfair Display SC', serif !important;
-  font-weight: 600 !important;
   border-bottom: 1px solid #262626;
 }
-h2, h3, legend{
-  font-family: 'Playfair Display SC', serif !important; 
-}
-p, li, label{
+h5{
   font-family: Georgia, 'Times New Roman', serif !important;
 }
 img{
@@ -170,7 +164,6 @@ HEADER
   height: 207px;
 }
 #bs-collapse-1 ul{
-  font-family: Georgia, 'Times New Roman', serif !important;
   font-size: 16px;
 }
 #slider{

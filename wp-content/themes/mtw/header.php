@@ -32,6 +32,7 @@
 <body <?php body_class(); ?>>
 <div id="width-wrapper"><!--#width-wrapper closes in Footer-->
 	<div class="row">
+		<div id="spacer"></div>
 		<div id="slider" class="col-sm-12">
 			<?php// if ( is_home()) ?>
 				<img class="slide" src="http://placehold.it/1202x552" alt="">
@@ -85,39 +86,4 @@
 				</div>
 			</div>
 		</nav>
-		<script>
-			jQuery(document).ready(function($){	
-			    // Fixed menu on scroll
-		    	var stickyHeaderTop = $('#main-nav').offset().top;
-		    	$(window).scroll(function(){
-		    		if($(window).width() > 992) {
-			            if($(window).scrollTop() > stickyHeaderTop ) {
-		                    $('#main-nav').css({position: 'fixed', top: '0px', width: '102%'});
-		                    $('#main-nav').css('display', 'block');
-			            }else{
-			                $('#main-nav').css({position: 'static', top: '0px', width: '100%'});
-			            }
-			        }else{
-
-			        }
-			    });
-				
-				//slideshow
-				$('#slider').imageSlider({
-					slideDur: 5000,
-					fadeDur: 800
-				});
-				
-				//For mobile toggle
-				$('.navbar-toggle').click(function(e) {
-				    e.stopPropagation();
-				    $('#bs-collapse-1').toggleClass('in');
-				});
-				$(document).click(function (e) {
-				    if(!$(e.target).closest('#bs-collapse-1').length){
-				        $('#bs-collapse-1').removeClass('in');
-				    }
-				});
-			});
-		</script>
 	</div>	

@@ -24,6 +24,41 @@
 	</div>
 </div><!--opens in Header-->
 <script>
+	jQuery(document).ready(function($){	
+		//slideshow
+		$('#slider').imageSlider({
+			slideDur: 5000,
+			fadeDur: 800
+		});
+
+	    // Fixed menu on scroll
+		var stickyHeaderTop = $('#main-nav').offset().top;
+		$(window).scroll(function(){
+			if($(window).width() > 992) {
+	            if($(window).scrollTop() > stickyHeaderTop ) {
+	                $('#main-nav').css({position: 'fixed', top: '0px', width: '102%'});
+	                $('#spacer').css({display: 'block', height: '53px'});
+	            }else{
+	                $('#main-nav').css({position: 'static', top: '0px', width: '100%'});
+	                $('#spacer').css({display: 'none'});
+	            }
+	        }else{
+
+	        }
+	    });
+		
+		//For mobile toggle
+		$('.navbar-toggle').click(function(e) {
+		    e.stopPropagation();
+		    $('#bs-collapse-1').toggleClass('in');
+		});
+		$(document).click(function (e) {
+		    if(!$(e.target).closest('#bs-collapse-1').length){
+		        $('#bs-collapse-1').removeClass('in');
+		    }
+		});
+	});
+	
 	//google analytics 
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
