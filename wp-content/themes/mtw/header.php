@@ -90,11 +90,11 @@
 			    // Fixed menu on scroll
 		    	var stickyHeaderTop = $('#main-nav').offset().top;
 		    	$(window).scroll(function(){
-		    		if ( $(window).width() > 992) {
-			            if( $(window).scrollTop() > stickyHeaderTop ) {
+		    		if($(window).width() > 992) {
+			            if($(window).scrollTop() > stickyHeaderTop ) {
 		                    $('#main-nav').css({position: 'fixed', top: '0px', width: '103%'});
-		                    $('#main-nav').css('display', 'block', 'z-index', '9999');
-			            } else {
+		                    $('#main-nav').css('display', 'block');
+			            }else{
 			                $('#main-nav').css({position: 'static', top: '0px', width: '100%'});
 			            }
 			        }else{

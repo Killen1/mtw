@@ -15,6 +15,11 @@ h2, h3, legend{
 p, li, label{
   font-family: Georgia, 'Times New Roman', serif !important;
 }
+img{
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
 /*=============
 HELPER CLASSES
 ===============*/
@@ -208,7 +213,9 @@ HEADER
   background: #E2CEA8;
 }
 #main-nav{
-  z-index: 9999;
+  z-index: 100;
+  -webkit-box-shadow: 0px 1px 10px -3px #000000;
+  box-shadow: 0px 1px 10px -3px #000000;
 }
 #main-nav .social-media a{
   color:#fff;
@@ -273,23 +280,11 @@ padding-bottom: 10px;
 #youtube-video a img{
   max-width: 350px;
 }
-/*========
-MUSIC
-==========*/
-.music-post-wrapper img{
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
 /*=========
 SHOWS
 ===========*/
 .show-type ul li{
   display: inline;
-}
-.current,
-.current:hover{
-  text-decoration: underline;
 }
 .music-social-media .addthis_toolbox {
   width: 40px;
@@ -306,11 +301,6 @@ NEWS
 ==========*/
 .news-post-wrapper{
   border-bottom: 1px solid #262626;
-}
-.news-image img{
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 /*=========
 Photos
@@ -353,9 +343,6 @@ BAND
 }
 .member-photo img{
   position: relative;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 .mouse-enter{
   position: absolute;
