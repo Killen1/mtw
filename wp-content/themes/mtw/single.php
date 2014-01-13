@@ -16,7 +16,7 @@
 										<?php if( has_post_thumbnail()) :?>
 											<?php echo get_the_post_thumbnail( $post_id, array(360,360), array('alt' => 'News Image') ); ?>
 										<?else:?>
-											<img src="http://placehold.it/350x350" alt="">
+											<img src="<?php echo SITE_ROOT ?>images/mtw-logo.png" alt="Maynard &amp; The Walnut">
 										<?php endif ;?>
 									</div>
 									<div class="clearfix margin-right-10 margin-bottom-10">

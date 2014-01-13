@@ -5,9 +5,10 @@ td,th{
 	font-family: Georgia, 'Times New Roman', serif !important;
 }
 
-/* By default this is an h3 that appears above each artist's list of shows */
+/* By default this is an h3 that appears above each artist's list of shows 
 h3.gigpress-artist-heading  {	
 }
+*/
 /* This span contains the RSS and iCal links for the artist */
 span.gigpress-artist-subscriptions {
 	margin-left: 5px;
@@ -58,15 +59,15 @@ th.gigpress-heading h1, th.gigpress-heading h2, th.gigpress-heading h3, th.gigpr
 	text-align: left;
 }
 
-/* Applies to the first row of each show listing */
+/* Applies to the first row of each show listing 
 .gigpress-row td {
 }
-
-/* To set an alternating row style */
+*/
+/* To set an alternating row style
 tr.gigpress-alt {
 }
-
-/* Individual classes for the label header cells that start the table */
+ */
+/* Individual classes for the label header cells that start the table 
 th.gigpress-date {
 }
 
@@ -81,8 +82,8 @@ th.gigpress-venue {
 
 th.gigpress-country {
 }
-
-/* Likewise, individual classes for the content cells */
+*/
+/* Likewise, individual classes for the content cells 
 td.gigpress-date {
 }
 
@@ -97,16 +98,16 @@ td.gigpress-venue {
 
 td.gigpress-country {
 }
-
+*/
 /* Style for rows within a tour */
 tr.gigpress-tour td {
 	background-color: #E2CEB3;
 }
 
-/* Style for the first row after a tour ends in the list */
+/* Style for the first row after a tour ends in the list
 tr.gigpress-divider.gigpress-row td {
 }
-
+ */
 /* The secondary row for each show, contains time, admission, etc */
 tr.gigpress-info td {
 	font-size: 90%;
@@ -153,12 +154,10 @@ strong.gigpress-cancelled, strong.gigpress-soldout {
 	color: #FFF;
 	border: none;
 }
-
-/* In case you want to style the Googlefied address link */
+/* In case you want to style the Googlefied address link 
 a.gigpress-address {
 }
-
-
+*/
 /* These styles control the peek-a-boo "add" links to iCal and Google Calendar. Behaviour dictated by a separate jQuery script. */
 td.gigpress-links-cell {
 	vertical-align: top;
@@ -253,20 +252,20 @@ span.gigpress-sidebar-status{
 	display: block;
 	clear:both;
 }
-/* For artist headings in the sidebar */
+/* For artist headings in the sidebar 
 h3.gigpress-list-artist-heading {
 }
-
+*/
 /* For tour headings in the sidebar */
 span.gigpress-list-tour-heading {	
 	font-weight: bold;
 	font-size: 110%;
 }
 
-/* So if you like you can style each alternating list item differently */
+/* So if you like you can style each alternating list item differently 
 li.gigpress-alt {
 }
-
+*/
 /* So if you like you can style the date differently */
 span.gigpress-sidebar-date {
 	font-weight: bold;
@@ -284,9 +283,9 @@ ul.gigpress-related-show {
 .gigpress-related-label {
 	font-weight: bold;
 }
-
+/*
 .gigpress-related-item {
-}
+}*/
 /* This is just to include data for hcalendar support, but hide it from view */
 .hide {
 	display: none;

@@ -6,7 +6,7 @@ body,html{
 h1{
   border-bottom: 1px solid #262626;
 }
-h5{
+h5, h6{
   font-family: Georgia, 'Times New Roman', serif !important;
 }
 img{
@@ -276,6 +276,9 @@ padding-bottom: 10px;
 /*=========
 SHOWS
 ===========*/
+.current{
+  text-decoration: underline;
+}
 .show-type ul li{
   display: inline;
 }

@@ -36,14 +36,12 @@
 		$(window).scroll(function(){
 			if($(window).width() > 992) {
 	            if($(window).scrollTop() > stickyHeaderTop ) {
-	                $('#main-nav').css({position: 'fixed', top: '0px', width: '102%'});
+	                $('#main-nav').css({position: 'fixed', top: '0px', width: '102.35%'});
 	                $('#spacer').css({display: 'block', height: '53px'});
 	            }else{
 	                $('#main-nav').css({position: 'static', top: '0px', width: '100%'});
 	                $('#spacer').css({display: 'none'});
 	            }
-	        }else{
-
 	        }
 	    });
 		

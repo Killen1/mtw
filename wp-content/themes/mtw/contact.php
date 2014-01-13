@@ -84,7 +84,7 @@ get_header(); ?>
                             <label for="subject">Subject<span class="help-required">*</span></label>
                             <select name="subject" id="subject" class="form-control required" role="select" aria-required="true">
                                 <option>Booking</option>
-                                <option>Just want to say hi</option>
+                                <option>Just want to say hello</option>
                                 <option>Comments</option>
                                 <option>Other</option>
                             </select>
