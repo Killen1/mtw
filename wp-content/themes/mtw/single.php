@@ -32,7 +32,7 @@
 										<?php the_content();?>
 									</div>
 								</div>
-								<?/* This will not work on localHost*/?>
+								<?// This will not work on localHost?>
 								<?php// echo do_shortcode('[fbcomments][fbcomments url="http://peadig.com/wordpress-plugins/facebook-comments/" width="375" count="off" num="3" countmsg="wonderful comments!"]'); ?>
 								<div class="post-nav">
 									<?php previous_post_link('%link', '<div id="prev-post" class="pull-right margin-bottom-20"><i class="fa fa-chevron-right fa-3"></i></div>', $excluded_categories = '3, 4') ?>

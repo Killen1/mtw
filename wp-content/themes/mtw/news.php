@@ -23,9 +23,9 @@ get_header(); ?>
 				)
 			);
 		?>
-		<?php if ( have_posts() ) : ?>
+		<?php if (have_posts()) : ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-			<? //echo "<pre>"; print_r($posts); die();?>
+				<? //echo "<pre>"; print_r($posts); die();?>
 				<div class="news-post-wrapper">
 					<div class="row">
 						<div class="col-sm-1"></div>

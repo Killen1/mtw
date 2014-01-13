@@ -77,7 +77,7 @@ get_header(); ?>
 									<div class="video">
 										<div id="youtube-video">
 											<?//This is the image for the youtube Video Goes!?>
-											<a href="#"><img class="img-rounded" src="http://placehold.it/350x350" data-toggle="modal" data-target="#myModal"></a>
+											<a href="#"><img class="img-rounded" src="http://placehold.it/350x350" alt="Video Image" data-toggle="modal" data-target="#myModal"></a>
 										</div>
 										<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 										  	<div class="modal-dialog">
