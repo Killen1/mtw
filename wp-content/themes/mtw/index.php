@@ -8,7 +8,6 @@ get_header(); ?>
 			<?php $latest_news = new WP_Query('cat=2&showposts=1'); ?>
 			<?php if($latest_news->have_posts()) : ?>
 				<?php while($latest_news->have_posts()) : ?>
-				<? //echo "<pre>"; print_r($latest_news); die();?>
 					<?php $latest_news->the_post(); ?>
 					<div class="latest-news col-xs-12 col-sm-12 col-md-8 col-lg-8">
 						<div class="row">
@@ -68,17 +67,29 @@ get_header(); ?>
 			<div id="wrapper" class="bg-fabric">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="col-xs-12 col-sm-6 col-lg-5">
 							<div class="row">
 								<div class="col-xs-12 margin-bottom-30">
 									<?php mc4wp_form(); ?>
 								</div>
 								<div class="col-xs-12">
 									<div class="video">
-										<div id="youtube-video">
-											<?//This is the image for the youtube Video Goes!?>
-											<a href="#"><img class="img-rounded" src="http://placehold.it/350x350" alt="Video Image" data-toggle="modal" data-target="#myModal"></a>
-										</div>
+										<?php $video = new WP_Query('category_name=video&showposts=1'); ?>
+										<?php if($video->have_posts()) : ?>
+											<?php while($video->have_posts()) : ?>
+												<?php $video->the_post(); ?>
+												<div id="youtube-video">
+													<a href="#" title="<?php the_title(); ?>">
+														<?php echo get_the_post_thumbnail( $post_id, array(400,270), array('alt' => 'Video Image', 'data-toggle' => 'modal', 'data-target' => '#myModal') ); ?>
+														<i class="play-button fa fa-play"></i>
+													</a>
+													<div class="caption">
+														<p class="wht margin-0"><?php the_title(); ?></p>
+													</div>
+												</div>
+											<? endwhile;?>
+										<? endif;?>
+										<?php wp_reset_query(); ?>
 										<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 										  	<div class="modal-dialog">
 											    <div class="modal-content">
@@ -92,11 +103,11 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-8 margin-bottom-20 margin-top-20">
+						<div class="col-xs-12 col-sm-6 col-lg-7 margin-bottom-20 margin-top-20">
 							<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynardandthewalnut" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
 							<script>
 								//This is for the Youtube Video popup
-								$('#youtube-video img').click(function () {
+								$('#youtube-video a').click(function () {
 							    	//This is were you put the youtube video url It must be in this format to play --> http://www.youtube.com/v/<video_id>&amp;autoplay=1
 							        var src = 'http://www.youtube.com/v/39EH99I1gg8&amp;autoplay=1';
 							      	$('#video-modal').modal('show');

@@ -13,18 +13,18 @@ get_header(); ?>
 			</div>
 		</div>
 		<?php
-			query_posts(
+			$news_posts = new WP_Query(
 				array(
 					'post_type' => 'post',
 					'paged' => $paged,
 					'orderby'=>  'date',
 					'posts_per_page' => 5,
-					'cat' => '-3, -4'
+					'cat' => '-3, -4, -5'
 				)
 			);
 		?>
-		<?php if (have_posts()) : ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+		<?php if ($news_posts->have_posts()) : ?>
+			<?php while ( $news_posts->have_posts() ) : $news_posts->the_post(); ?>
 				<? //echo "<pre>"; print_r($posts); die();?>
 				<div class="news-post-wrapper">
 					<div class="row">
