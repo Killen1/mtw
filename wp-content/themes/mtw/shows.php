@@ -53,7 +53,7 @@ get_header(); ?>
 </div>
 <script>
 	jQuery(document).ready(function(){
-		init_tabs();
+		gig_tabs();
 	});
 </script>
 <?php get_footer();?>

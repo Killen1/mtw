@@ -67,7 +67,7 @@ get_header(); ?>
 			<div id="wrapper" class="bg-fabric">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-lg-5">
+						<div class="col-xs-12 col-sm-12 col-lg-5">
 							<div class="row">
 								<div class="col-xs-12 margin-bottom-30">
 									<?php mc4wp_form(); ?>
@@ -103,7 +103,7 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-7 margin-bottom-20 margin-top-20">
+						<div class="col-xs-12 col-sm-12 col-lg-7 margin-bottom-20 margin-top-20">
 							<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynardandthewalnut" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
 							<script>
 								//This is for the Youtube Video popup
