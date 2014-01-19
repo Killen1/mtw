@@ -368,7 +368,16 @@ BAND
   width: 150px;
   height: 150px;
 }
-   
+/*======
+MUSIC
+========*/
+.album-photo img{
+  position: relative;
+}
+.mouse-enter-album{
+  position: absolute;
+  top: 0;
+}
 /*========
 FOOTER
 ==========*/

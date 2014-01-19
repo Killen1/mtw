@@ -20,16 +20,9 @@ get_header(); ?>
 									<div class="album-photo">
 										<?php echo get_the_post_thumbnail( $post_id, array(250,250), array('alt' => 'Music Image') ); ?>
 										<div class="mouse-enter-album" style="display: none;">
-											<?php //if( class_exists( 'kdMultipleFeaturedImages' ) ) :vkd_mfi_the_featured_image( 'featured-image-2', 'post' ); endif;?>
-											<?php kd_mfi_the_featured_image( $image_id, $post_type, $size, $post_id ); ?>
+											<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image'); endif; ?>
 										</div>
 									</div>
-								</div>
-								<div class="second-feets">
-									<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image', 250, 250); endif; ?>
-								</div>
-								<div class="second-feets">
-									<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image', 250, 250); endif; ?>
 								</div>
 								<div class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
 									<div class="row">
