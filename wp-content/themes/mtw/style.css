@@ -176,7 +176,6 @@ HEADER
   height: 100%;
   top: 0;
   z-index: 1;
-  opacity: 0;
 }
 #slider img.slide{
   height: auto;

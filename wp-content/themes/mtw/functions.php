@@ -3,6 +3,14 @@
  * @package WordPress
  * @subpackage Default_Theme
  */
+/*
+   _____  .__                  .__  .__ __                   ________  .__        __            
+  /  _  \ |  |   ____ ___  ___ |  | |__|  | __ ____   ______ \______ \ |__| ____ |  | __  ______
+ /  /_\  \|  | _/ __ \\  \/  / |  | |  |  |/ // __ \ /  ___/  |    |  \|  |/ ___\|  |/ / /  ___/
+/    |    \  |_\  ___/ >    <  |  |_|  |    <\  ___/ \___ \   |    `   \  \  \___|    <  \___ \ 
+\____|__  /____/\___  >__/\_ \ |____/__|__|_ \\___  >____  > /_______  /__|\___  >__|_ \/____  >
+        \/          \/      \/              \/    \/     \/          \/        \/     \/     \/ 
+*/
 
 // this is for Set featured image
 add_theme_support( 'post-thumbnails' ); 
@@ -103,6 +111,17 @@ function word_truncate_excerpt( $limit ){
     $excerpt = substr($excerpt, 0, $pos[$limit]) . '...';
   }
   return $excerpt;
+}
+
+//This is for the second featured image
+if (class_exists('MultiPostThumbnails')) {
+  new MultiPostThumbnails(
+    array(
+      'label' => 'Secondary Image',
+      'id' => 'secondary-image',
+      'post_type' => 'post'
+    )
+  );
 }
 
 ?>
