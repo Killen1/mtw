@@ -30,6 +30,7 @@ function the_post_thumbnail_caption( $post_id ) {
     return $thumbnail_image[0]->post_excerpt;
   }
 }
+
 //Pagination function for News page
 function news_pagination() {
   if( is_singular() )
