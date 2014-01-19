@@ -20,7 +20,7 @@ get_header(); ?>
 									<div class="album-photo">
 										<?php echo get_the_post_thumbnail( $post_id, array(250,250), array('alt' => 'Music Image') ); ?>
 										<div class="mouse-enter-album" style="display: none;">
-											<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image'); endif; ?>
+											<?php if (class_exists('MultiPostThumbnails')) :  MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image', NULL,  'post-secondary-image-thumbnail'); endif; ?>
 										</div>
 									</div>
 								</div>

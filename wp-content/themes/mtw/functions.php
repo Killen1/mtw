@@ -116,4 +116,5 @@ if (class_exists('MultiPostThumbnails')) {
   );
 }
 
+add_image_size('post-secondary-image-thumbnail', 250, 250);
 ?>
