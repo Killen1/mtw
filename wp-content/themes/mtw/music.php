@@ -19,6 +19,9 @@ get_header(); ?>
 								<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
 									<?php echo get_the_post_thumbnail( $post_id, array(250,250), array('alt' => 'Music Image') ); ?>
 								</div>
+								<div class="second-feets">
+									<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image', 250, 250); endif; ?>
+								</div>
 								<div class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
 									<div class="row">
 										<div class="col-xs-12">
