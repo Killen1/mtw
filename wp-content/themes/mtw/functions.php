@@ -3,14 +3,6 @@
  * @package WordPress
  * @subpackage Default_Theme
  */
-/*
-   _____  .__                  .__  .__ __                   ________  .__        __            
-  /  _  \ |  |   ____ ___  ___ |  | |__|  | __ ____   ______ \______ \ |__| ____ |  | __  ______
- /  /_\  \|  | _/ __ \\  \/  / |  | |  |  |/ // __ \ /  ___/  |    |  \|  |/ ___\|  |/ / /  ___/
-/    |    \  |_\  ___/ >    <  |  |_|  |    <\  ___/ \___ \   |    `   \  \  \___|    <  \___ \ 
-\____|__  /____/\___  >__/\_ \ |____/__|__|_ \\___  >____  > /_______  /__|\___  >__|_ \/____  >
-        \/          \/      \/              \/    \/     \/          \/        \/     \/     \/ 
-*/
 
 // this is for Set featured image
 add_theme_support( 'post-thumbnails' ); 
@@ -38,6 +30,7 @@ function the_post_thumbnail_caption( $post_id ) {
     return $thumbnail_image[0]->post_excerpt;
   }
 }
+
 //Pagination function for News page
 function news_pagination() {
   if( is_singular() )
