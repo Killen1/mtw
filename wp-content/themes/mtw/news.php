@@ -13,7 +13,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<?php
-			$news_posts = new WP_Query(
+			query_posts(
 				array(
 					'post_type' => 'post',
 					'paged' => $paged,
@@ -23,8 +23,8 @@ get_header(); ?>
 				)
 			);
 		?>
-		<?php if ($news_posts->have_posts()) : ?>
-			<?php while ( $news_posts->have_posts() ) : $news_posts->the_post(); ?>
+		<?php if (have_posts()) : ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 				<? //echo "<pre>"; print_r($posts); die();?>
 				<div class="news-post-wrapper">
 					<div class="row">
