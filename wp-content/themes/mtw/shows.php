@@ -15,7 +15,7 @@ get_header(); ?>
 					<div class="row">
 						<div class="show-type col-xs-6">
 							<ul class="tabs padding-0 list-unstyled">
-								<li><a href="#upcoming">Upcoming Dates</a> |</li>
+								<li><a href="#upcoming" class="current">Upcoming Dates</a> |</li>
 								<li><a href="#archive">Archive</a></li>
 							</ul>
 						</div>

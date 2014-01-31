@@ -26,7 +26,7 @@ get_header(); ?>
 		<?php if (have_posts()) : ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<? //echo "<pre>"; print_r($posts); die();?>
-				<div class="news-post-wrapper">
+				<div class="news-post-wrapper border-bottom">
 					<div class="row">
 						<div class="col-sm-1"></div>
 						<div class="col-xs-12 col-sm-10">
@@ -46,8 +46,6 @@ get_header(); ?>
 										<a class="addthis_button_tweet" addthis:url="<?php the_permalink(); ?>" addthis:title="<?php the_title(); ?>"></a>
 										<a class="addthis_counter addthis_pill_style"></a>
 									</div>
-									<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-									<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526da6b84c40c531"></script>
 								</div>
 								<div class="new-content">
 									<?php the_content();?>

@@ -3,16 +3,8 @@ body,html{
   padding: 0px;
   overflow-x: hidden;
 }
-h1{
-  border-bottom: 1px solid #262626;
-}
 h5, h6{
   font-family: Georgia, 'Times New Roman', serif !important;
-}
-img{
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 /*=============
 HELPER CLASSES
@@ -20,24 +12,21 @@ HELPER CLASSES
 /*clearFix styles*/
 .clearfix:before,
 .clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
 }
 .clearAll{
-    height: 0px;
-    overflow: hidden;
-    clear: both;
-    margin: 0px;
-    padding: 0px;
-    float: none;
-}
-.clearfix:after {
-    clear: both;
+  height: 0px;
+  overflow: hidden;
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+  float: none;
 }
 .clearfix {
-    zoom: 1; /* IE < 8 */
+  zoom: 1; /* IE < 8 */
 }
 /*Margin 0px*/
 .margin-0{
@@ -148,6 +137,9 @@ HELPER CLASSES
 .wht{
   color:#fff;
 }
+.border-bottom{
+  border-bottom: 1px solid #262626;
+}
 /*===============
 HEADER
 ================*/
@@ -233,19 +225,12 @@ HEADER
 /*========
 INDEX
 ==========*/
-.latest-news h2{
-border-bottom: 1px solid #262626;
-padding-bottom: 10px;
-}
 .bg-paper{
   background: url(images/bg_final.png);
 }
 .bg-fabric{
   background: url(images/bg-fabric.png);
   box-shadow: 0px 0 20px 0;
-}
-.event-date{
-  border-bottom: 1px solid #262626;
 }
 .mc4wp-alert,
 .mc4wp-error{
@@ -313,12 +298,6 @@ SHOWS
 #main-nav .addthis_default_style .at300bs {
   float: none !important;
 }
-/*========
-NEWS
-==========*/
-.news-post-wrapper{
-  border-bottom: 1px solid #262626;
-}
 /*=========
 Photos
 ===========*/
@@ -367,6 +346,7 @@ BAND
   background-image: url('images/grey_trans.png');
   width: 150px;
   height: 150px;
+  opacity: 0;
 }
 /*======
 MUSIC
@@ -377,6 +357,14 @@ MUSIC
 .mouse-enter-album{
   position: absolute;
   top: 0;
+  opacity: 0;
+}
+/*========
+Single
+=========*/
+.fa-chevron-right:hover,
+.fa-chevron-left:hover{
+  color: #B38349;
 }
 /*========
 FOOTER
@@ -411,5 +399,4 @@ FOOTER
   .social-media-footer{
     display: none;
   }
-
 }

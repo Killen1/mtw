@@ -12,13 +12,17 @@ get_header(); ?>
 					<div class="latest-news col-xs-12 col-sm-12 col-md-8 col-lg-8">
 						<div class="row">
 							<div class="col-sm-12">
-								<h2>Latest News</h2>
+								<h2 class="padding-bottom-10 border-bottom">Latest News</h2>
 							</div>
 						</div>
 						<div class="row">  
 							<div class="col-sm-5 col-md-6 col-lg-5 margin-bottom-10">
 								<a href="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" title="<?php the_title(); ?>">
-									<?php echo get_the_post_thumbnail( $post_id, array(300,300), array('alt' => 'News Image') ); ?>
+									<?php if( has_post_thumbnail()) :?>
+										<?php echo get_the_post_thumbnail( $post_id, array(300,300), array('alt' => 'News Image') ); ?>
+									<?php else: ?>
+										<img src="<?php echo SITE_ROOT ?>images/mtw-logo.png" alt="Maynard &amp; The Walnut">
+									<?php endif; ?>
 								</a>
 							</div>
 							<div class="col-sm-7 col-md-6 col-lg-7">
@@ -94,7 +98,7 @@ get_header(); ?>
 										  	<div class="modal-dialog">
 											    <div class="modal-content">
 											        <div class="modal-body">
-											        	<iframe width="560" height="410" frameborder="0" allowfullscreen=""></iframe>
+											        	<iframe width="100%" height="410" frameborder="0" allowfullscreen=""></iframe>
 											      	</div>
 											    </div>
 										  	</div>
@@ -105,35 +109,6 @@ get_header(); ?>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-lg-7 margin-bottom-20 margin-top-20">
 							<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynardandthewalnut" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
-							<script>
-								//This is for the Youtube Video popup
-								$('#youtube-video a').click(function () {
-							    	//This is were you put the youtube video url It must be in this format to play --> http://www.youtube.com/v/<video_id>&amp;autoplay=1
-							        var src = 'http://www.youtube.com/v/39EH99I1gg8&amp;autoplay=1';
-							      	$('#video-modal').modal('show');
-							        $('#video-modal iframe').attr('src', src);
-							    });
-							    $('#video-modal').click(function () {
-							        $('#video-modal iframe').removeAttr('src');
-							    });
-
-							    //This is for SoundCloud
-								(function(){
-								    var widgetIframe = document.getElementById('sound-cloud'),
-								        widget       = SC.Widget(widgetIframe);
-								    widget.bind(SC.Widget.Events.READY, {auto_play: true}, function() {
-								    	widget.bind(SC.Widget.Events.PLAY, function() {
-									        widget.getCurrentSound(function(currentSound) {
-									          console.log('sound ' + currentSound.get('') + 'began to play');
-									        });
-								    	});
-									    widget.getVolume(function(volume) {
-									    	console.log('current volume value is ' + volume);
-									    });
-								      	widget.setVolume(75);
-								    });
-								}());
-							</script>
 						</div>
 					</div>
 				</div>
@@ -141,4 +116,33 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+<script>
+	//This is for the Youtube Video popup
+	$('#youtube-video a').click(function () {
+    	//This is were you put the youtube video url It must be in this format to play --> http://www.youtube.com/v/<video_id>&amp;autoplay=1
+        var src = 'http://www.youtube.com/v/s5pyqt3z1-M&amp;autoplay=1';
+      	$('#video-modal').modal('show');
+        $('#video-modal iframe').attr('src', src);
+    });
+    $('#video-modal').click(function () {
+        $('#video-modal iframe').removeAttr('src');
+    });
+
+    //This is for SoundCloud
+	(function(){
+	    var widgetIframe = document.getElementById('sound-cloud'),
+	        widget       = SC.Widget(widgetIframe);
+	    widget.bind(SC.Widget.Events.READY, {auto_play: true}, function() {
+	    	widget.bind(SC.Widget.Events.PLAY, function() {
+		        widget.getCurrentSound(function(currentSound) {
+		          console.log('sound ' + currentSound.get('') + 'began to play');
+		        });
+	    	});
+		    widget.getVolume(function(volume) {
+		    	console.log('current volume value is ' + volume);
+		    });
+	      	widget.setVolume(75);
+	    });
+	}());
+</script>
 <?php get_footer(); ?>

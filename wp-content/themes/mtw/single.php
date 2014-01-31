@@ -25,8 +25,6 @@
 											<a class="addthis_button_tweet" addthis:url="<?php the_permalink(); ?>" addthis:title="<?php the_title(); ?>"></a>
 											<a class="addthis_counter addthis_pill_style"></a>
 										</div>
-										<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-										<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526da6b84c40c531"></script>
 									</div>
 									<div class="new-content">
 										<?php the_content();?>

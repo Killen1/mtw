@@ -33,8 +33,6 @@ get_header(); ?>
 												<a class="addthis_button_tweet" addthis:url="<?php the_permalink(); ?>" addthis:title="<?php the_title(); ?>"></a>
 												<a class="addthis_counter addthis_pill_style"></a>
 											</div>
-											<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-											<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526da6b84c40c531"></script>
 										</div>
 									</div>
 									<div class="row">
@@ -59,36 +57,36 @@ get_header(); ?>
 				<div class="row">
 					<div class="col-xs-12 margin-bottom-20 margin-top-20">
 						<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynardandthewalnut" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
-						<script>
-							(function(){
-							    var widgetIframe = document.getElementById('sound-cloud'),
-							        widget       = SC.Widget(widgetIframe);
-							    widget.bind(SC.Widget.Events.READY, {auto_play: true}, function() {
-							    	widget.bind(SC.Widget.Events.PLAY, function() {
-								        widget.getCurrentSound(function(currentSound) {
-								          console.log('sound ' + currentSound.get('') + 'began to play');
-								        });
-							    	});
-								    widget.getVolume(function(volume) {
-								    	console.log('current volume value is ' + volume);
-								    });
-							      	widget.setVolume(75);
-							    });
-							}());
-
-							jQuery(document).ready(function($) {
-								$('.album-photo').on('mouseenter', function(){
-									$(this).children('.mouse-enter-album').show();
-								});
-								$('.album-photo').on('mouseleave', function(){
-									$(this).children('.mouse-enter-album').hide();
-								});
-							});
-						</script>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<script>
+	(function(){
+	    var widgetIframe = document.getElementById('sound-cloud'),
+	        widget       = SC.Widget(widgetIframe);
+	    widget.bind(SC.Widget.Events.READY, {auto_play: true}, function() {
+	    	widget.bind(SC.Widget.Events.PLAY, function() {
+		        widget.getCurrentSound(function(currentSound) {
+		          console.log('sound ' + currentSound.get('') + 'began to play');
+		        });
+	    	});
+		    widget.getVolume(function(volume) {
+		    	console.log('current volume value is ' + volume);
+		    });
+	      	widget.setVolume(75);
+	    });
+	}());
+
+	jQuery(document).ready(function($) {
+		$('.album-photo').on('mouseenter', function(){
+			$(this).children('.mouse-enter-album').show().animate({opacity: '1'}, 300);
+		});
+		$('.album-photo').on('mouseleave', function(){
+			$(this).children('.mouse-enter-album').hide().animate({opacity: '0'}, 300);
+		});
+	});
+</script>
 <?php get_footer(); ?>

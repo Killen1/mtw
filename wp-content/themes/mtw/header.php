@@ -29,6 +29,8 @@
 	<?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/jquery.validate.pack.js"></script><? endif; ?>
 	<?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/bootstrap-contact.js"></script><? endif; ?>
 	<?php if ( is_page('photos')): ?><script src="<?php echo SITE_ROOT ?>js/instafeed.min.js"></script><? endif; ?>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526da6b84c40c531"></script>
+	<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 </head>
 <body <?php body_class(); ?>>
 <div id="width-wrapper"><!--#width-wrapper closes in Footer-->
@@ -82,7 +84,6 @@
 							<li><a class="addthis_button_vimeo_follow" addthis:userid="MaynardandTheWalnut"><i class="fa fa-vimeo-square fa-lg"></i></a></li>
 							<li><a class="rss" href="<?php echo MTW_ROOT ?>feed" target="_blank" title="RSS Feed"><i class="fa fa-rss-square fa-lg"></i></a></li>
 						</ul>
-						<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526da6b84c40c531"></script>
 					</div>
 				</div>
 			</div>

@@ -60,7 +60,7 @@ get_header(); ?>
                 <h6>M&amp;TW | <a href="mailto:booking@maynardthewalnut.com">mtw@maynardandthewalnut.com</a></h6>
             </div>
             <div class="margin-top-20 col-md-6 col-lg-6">
-                <form role="form" method="post" action="http://maynardandthewalnut.com/contact" id="contactform">
+                <form role="form" method="post" action="<?php echo MTW_ROOT ?>contact" id="contactform">
                     <fieldset>
                         <legend>Contact Us</legend>
                         <?php if(isset($hasError)) { ?>

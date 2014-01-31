@@ -12,10 +12,10 @@ get_header(); ?>
 				<div class="col-xs-12 col-md-6 col-lg-4 margin-bottom-20">
 					<h1>Band Members</h1>
 					<div class="row">
-						<?php $bandpic = new WP_Query('category_name=Band Photo'); ?>
+						<?php $bandpic = new WP_Query('category_name=band-photo&showposts=6'); ?>
 						<?php if($bandpic->have_posts()) : ?>
 							<?php while($bandpic->have_posts()): $bandpic->the_post(); ?>
-							<?// echo "<pre>"; print_r($bandpic); die();?>
+								<?// echo "<pre>"; print_r($bandpic); die();?>
 								<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 margin-top-20">
 									<div class="member-photo">
 										<?php echo get_the_post_thumbnail( $post_id, array(150,150), array('alt' => 'Band Member') ); ?>
@@ -44,10 +44,10 @@ get_header(); ?>
 <script>
 	jQuery(document).ready(function($) {
 		$('.member-photo').on('mouseenter', function(){
-			$(this).children('.mouse-enter').show();
+			$(this).children('.mouse-enter').show().animate({opacity: '1'}, 300);
 		});
 		$('.member-photo').on('mouseleave', function(){
-			$(this).children('.mouse-enter').hide();
+			$(this).children('.mouse-enter').hide().animate({opacity: '0'}, 300);
 		});
 	});
 </script>
