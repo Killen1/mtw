@@ -14,7 +14,7 @@ get_header(); ?>
 				<?php if($music->have_posts()) : ?>
 					<?php while($music->have_posts()): $music->the_post(); ?>
 						<? //echo "<pre>"; print_r($music); die();?>
-						<div id="<?php the_ID(); ?>" class="music-post-wrapper margin-left-20 margin-top-20">
+						<div id="<?php the_ID(); ?>" class="music-post-wrapper margin-top-20">
 							<div class="row">
 								<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
 									<div class="album-photo">

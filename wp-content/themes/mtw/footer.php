@@ -1,9 +1,12 @@
-	<div class="bg-paper">
+	<div class="bg-paper padding-top-10">
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="container margin-top-20">
+				<div id="footer" class="container margin-top-20">
 					<div class="copyright clearfix">
 						<p class="text-center">&copy; <?php echo date("Y") ?> Maynard &amp; The Walnut All Rights Reserved.</p>
+					</div>
+					<div id="top" class="pull-right">
+						<a href="#width-wrapper">Top</a>
 					</div>
 				</div>
 			</div>
@@ -55,6 +58,13 @@
 		        $('#bs-collapse-1').removeClass('in');
 		    }
 		});
+
+		$('#top a').on("click",function(){
+			$('html,body').animate({ scrollTop: 0 }, 'slow', function () {
+                      
+            });
+		}); 
+
 	});
 	
 	//google analytics 

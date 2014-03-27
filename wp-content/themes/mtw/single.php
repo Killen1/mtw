@@ -30,8 +30,7 @@
 										<?php the_content();?>
 									</div>
 								</div>
-								<?// This will not work on localHost?>
-								<?php// echo do_shortcode('[fbcomments][fbcomments url="http://peadig.com/wordpress-plugins/facebook-comments/" width="375" count="off" num="3" countmsg="wonderful comments!"]'); ?>
+								<?php// echo do_shortcode('[fbcomments]'); ?>
 								<div class="post-nav">
 									<?php previous_post_link('%link', '<div id="prev-post" class="pull-right margin-bottom-20"><i class="fa fa-chevron-right fa-3"></i></div>', $excluded_categories = '3, 4') ?>
 									<?php next_post_link('%link', '<div id="next-post" class="pull-left margin-bottom-20"><i class="fa fa-chevron-left fa-3"></i></div>', $excluded_categories = '3, 4') ?>
@@ -45,4 +44,21 @@
 		<?php endif; ?>
 	</div>
 </div>
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) {
+		return;
+	}
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1441527642733336";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<script>
+		ent.getElementById('fb-root').appendChild(e);
+	}());
+	</script>
+</script>
+
 <?php get_footer();?>

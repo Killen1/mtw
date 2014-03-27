@@ -58,6 +58,8 @@ get_header(); ?>
                 <h6>Booking | <a href="mailto:booking@maynardthewalnut.com">booking@maynardthewalnut.com</a></h6>
                 <h2>Band</h2>
                 <h6>M&amp;TW | <a href="mailto:booking@maynardthewalnut.com">mtw@maynardandthewalnut.com</a></h6>
+                <h2>Photos</h2>
+                <h6>Kenya Brading | <a href="http://www.kenya-brading.com/" target="_blank">www.kenya-brading.com</a></h6>
             </div>
             <div class="margin-top-20 col-md-6 col-lg-6">
                 <form role="form" method="post" action="<?php echo MTW_ROOT ?>contact" id="contactform">

@@ -22,6 +22,20 @@ function organizedthemes_browser_body_class($classes) {
 }
 add_filter('body_class','organizedthemes_browser_body_class');
 
+// This theme uses wp_nav_menu() in two locations.
+register_nav_menus( array(
+    'primary'   => __( 'Top primary menu'),
+    //'secondary' => __( 'Secondary menu in left sidebar'),
+) );
+//active class
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+function special_nav_class($classes, $item){
+     if( in_array('current-menu-item', $classes) ){
+             $classes[] = 'active ';
+     }
+     return $classes;
+}
+
 //Function for the post thumbnail Title
 function the_post_thumbnail_caption( $post_id ) {
   $thumbnail_id    = get_post_thumbnail_id($post_id);
@@ -117,5 +131,13 @@ if (class_exists('MultiPostThumbnails')) {
 }
 
 add_image_size('post-secondary-image-thumbnail', 250, 250);
+
+//admin favicon
+function pa_admin_area_favicon() {
+    $favicon_url = get_bloginfo('url') . '/wp-content/themes/mtw/images/favicon.ico';
+    echo '<link rel="shortcut icon" href="' . $favicon_url . '" />';
+}
+
+add_action('admin_head', 'pa_admin_area_favicon');
 
 ?>

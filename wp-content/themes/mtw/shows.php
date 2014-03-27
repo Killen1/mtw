@@ -24,8 +24,6 @@ get_header(); ?>
 								<a class="addthis_button_facebook"></a>
 								<a class="addthis_button_twitter"></a>
 							</div>
-							<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-							<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526da6b84c40c531"></script>
 						</div>
 					</div>
 					<div class="tabs-content-wrap">
