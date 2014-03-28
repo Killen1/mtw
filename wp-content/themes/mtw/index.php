@@ -108,7 +108,7 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-lg-7 margin-bottom-20 margin-top-20">
-							<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynardandthewalnut&amp;auto_play=true" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+							<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynardandthewalnut" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
 						</div>
 					</div>
 				</div>

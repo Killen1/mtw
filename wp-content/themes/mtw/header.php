@@ -12,10 +12,9 @@
 <html>
 <head>
     <title><?php if(is_home()):?><?php bloginfo('name'); ?><?else: ?><?php wp_title(' '); ?> | <?php bloginfo('name'); ?><?php endif;?></title> 
-    <link rel="stylesheet" href="<?php echo SITE_ROOT ?>style.css">
-    <link rel="stylesheet" href="<?php echo SITE_ROOT ?>gigpress.css">
-    <link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="<?php echo SITE_ROOT ?>style.min.css">
     <link rel="stylesheet" href="<?php echo SITE_ROOT ?>bootstrap.min.css">
+    <link rel="shortcut icon" href="<?php echo SITE_ROOT ?>images/favicon.ico" type="image/x-icon">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
     <?php if ( is_single() ):?>
@@ -32,9 +31,7 @@
     <meta property="fb:app_id" content="1441527642733336"/>
     <script src="<?php echo SITE_ROOT ?>js/jquery-1.11.min.js"></script> 
     <script src="<?php echo SITE_ROOT ?>js/bootstrap.min.js"></script>
-    <script src="<?php echo SITE_ROOT ?>js/slide-gallery.js"></script>
-    <?php if ( is_home() || is_page('music')): ?><script src="<?php echo SITE_ROOT ?>js/soundcloud.js"></script><? endif; ?>
-    <?php if ( is_page('shows')): ?><script src="<?php echo SITE_ROOT ?>js/gig-tabs.js"></script><? endif; ?>
+    <script src="<?php echo SITE_ROOT ?>js/scripts.min.js"></script>
     <?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/jquery.validate.pack.js"></script><? endif; ?>
     <?php if ( is_page('contact')): ?><script src="<?php echo SITE_ROOT ?>js/bootstrap-contact.js"></script><? endif; ?>
     <?php if ( is_page('photos') || is_page('photo-tag')): ?><script src="<?php echo SITE_ROOT ?>js/instafeed.min.js"></script><? endif; ?>
@@ -79,7 +76,6 @@
                     <?php //This is the menu. Menu items can be edited in admin panel in menus.
                         wp_nav_menu( array( 
                             'theme_location' => 'primary', 
-                            //'menu_class'     => 'nav-menu', 
                             'items_wrap'     => '<ul class="nav navbar-nav">%3$s</ul>', 
                         )); 
                     ?>
