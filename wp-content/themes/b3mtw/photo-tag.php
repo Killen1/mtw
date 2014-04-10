@@ -25,7 +25,7 @@ get_header(); ?>
         get: 'tagged',
         tagName: 'maynardandthewalnut',
         clientId: '3006d7ade78d491e8090c15e39d77206',
-        template: '<div class="col-xsp-12 col-xs-6 col-sm-4 col-md-3"><a href="{{link}}" target="_blank" title="{{caption}}"><img src="{{image}}" alt="Maynard & The Walnut"/></a></div>',
+        template: '<div class="col-xsp-12 col-xs-6 col-sm-4 col-md-3"><a href="{{link}}" target="_blank" title="{{caption}}"><img src="{{image}}" class="margin-10 padding-10" alt="Maynard & The Walnut"/></a></div>',
         limit: '60'
     });
     userFeed.run();

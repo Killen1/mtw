@@ -5198,13 +5198,13 @@ button.close {
   top: 10px;
   left: 10px;
   z-index: 7;
-  background: url(/wordpress/wp-content/themes/b3mtw/images/mtw-logo.png) no-repeat;
+  background: url(../../images/mtw-logo.png) no-repeat;
   width: 200px;
   height: 207px;
 }
 @media (max-width: 768px) {
   .main-logo a {
-    background: url(/wordpress/wp-content/themes/b3mtw/images/mtw-logo-sm.png) no-repeat;
+    background: url(../../images/mtw-logo-sm.png) no-repeat;
     width: 100px;
     height: 107px;
   }

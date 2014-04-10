@@ -317,10 +317,10 @@
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 .bg-paper {
-  background: url(/wordpress/wp-content/themes/b3mtw/images/bg_final.png);
+  background: url(../../images/bg_final.png);
 }
 .bg-fabric {
-  background: url(/wordpress/wp-content/themes/b3mtw/images/bg-fabric.png);
+  background: url(../../images/bg-fabric.png);
   box-shadow: 0px 0 20px 0;
 }
 .social-media .header-nav > li > a {
