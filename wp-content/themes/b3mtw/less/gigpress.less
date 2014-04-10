@@ -1,0 +1,148 @@
+td,th{
+	font-family: @h5-h6 !important;
+}
+.gigpress-menu-container,
+.gigpress-artist-subscriptions {
+	margin-left: 5px;
+	float: right;
+}
+.gigpress-header {
+	th {
+		font-weight: bold;
+	}
+}
+.gigpress-heading{
+	background-color: @tour-bg;
+	border-bottom: 1px solid @almost-black;
+	h1, h2, h3, h4, h5 {
+		margin: 0;
+	}
+}
+.gigpress-table{
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	margin: 0.5em 0 1em 0;
+	th {
+		padding: 6px 8px;
+		vertical-align: middle;
+		text-align: left;
+		border-bottom: 1px solid @almost-black;
+	}
+	td {
+		padding: 6px 8px;
+		vertical-align: middle;
+		text-align: left;
+	}
+}
+.gigpress-tour{ 
+	td {
+		background-color: @tour-bg;
+	}
+}
+.gigpress-info{
+	td {
+		font-size: 100%;
+		color: @gray-dark;
+		border-bottom: 1px solid @almost-black;
+	}
+	.description {
+		visibility: visible !important;
+	}
+}
+.cancelled {
+	.gigpress-info-label, 
+	.gigpress-info-item {
+		color: @gray-light;
+	}
+}
+.gigpress-info-item {
+	display: block;
+}
+.gigpress-info-label {
+	color: #666;
+}
+.gigpress-tickets-link {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.gigpress-cancelled, 
+.gigpress-soldout {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 1px;
+	color: #111;
+	background: #fffdeb;
+	border: 1px solid @gray-lighter;
+	background: #111;
+	color: @white;
+	border: none;
+}
+.gigpress-links-cell {
+	vertical-align: top;
+}
+.gigpress-calendar-add {
+	position: relative;
+}
+.gigpress-links-toggle {
+	display: block;
+	text-indent: -9999px;
+	width: 11px;
+	height: 11px;
+	background: transparent url(../../images/calendar-toggle.png) no-repeat left top;
+	cursor: pointer;
+	&:hover {
+		background-position: -11px 0px;
+	}
+}
+.gigpress-link-active {
+	background-position: -33px;
+	&:hover {
+		background-position: -22px;
+	}
+}
+.gigpress-calendar-links {
+	display: none;
+	position: absolute;
+	left: 20px;
+	top: -1.2em;
+	width: 15em;
+	padding-left: 7px;
+	span {
+		display: block;
+	}
+}
+.gigpress-calendar-links-inner {
+	background-color: #F3F3F3;
+	padding: 6px 8px;
+	font-size: 11px;
+	line-height: 16px;
+	border: 1px solid @almost-black;
+	border-width: 1px 1px 1px 0;
+}
+.gigpress-subscribe {
+	text-align: left;
+	color: @almost-black;
+	a {
+		display: inline-block;
+		margin: 0 3px;
+	}
+}
+.gigpress-listing {
+	padding: 0;
+	li {	
+		list-style: none;
+	}
+}
+.gigpress-wrap{ 
+	.gigpress-listing{
+		> li{
+			border-top: 1px solid @almost-black;
+			padding: 15px 0 15px 0;
+		}
+	}
+}
+.gigpress-list-tour-heading {	
+	font-weight: bold;
+	font-size: 110%;
+}

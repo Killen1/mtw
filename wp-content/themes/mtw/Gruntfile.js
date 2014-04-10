@@ -10,11 +10,11 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.less file
-          "wp-content/themes/mtw/style.min.css": 
+          "style.min.css": 
           [
-            "wp-content/themes/mtw/less/helpers.less", 
-            "wp-content/themes/mtw/less/styles.less",
-            "wp-content/themes/mtw/less/gigpress.less"
+            "less/helpers.less", 
+            "less/styles.less",
+            "less/gigpress.less"
           ]
         }
       }
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     watch: {
       styles: {
         // Which files to watch (all .less files recursively in the less directory)
-        files: ['/wp-content/themes/mtw/less/**/*.less'],
+        files: ['less/**/*.less'],
         tasks: ['less'],
         options: {
           nospawn: true
@@ -32,11 +32,11 @@ module.exports = function(grunt) {
      uglify: {
       my_target: {
         files: {
-          'wp-content/themes/mtw/js/scripts.min.js': 
+          'js/scripts.min.js': 
           [
-            'wp-content/themes/mtw/js/slide-gallery.js', 
-            'wp-content/themes/mtw/js/gig-tabs.js', 
-            'wp-content/themes/mtw/js/soundcloud.js'
+            'js/slide-gallery.js', 
+            'js/gig-tabs.js', 
+            'js/soundcloud.js'
           ]
         }
       }

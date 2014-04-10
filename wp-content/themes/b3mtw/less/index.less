@@ -1,0 +1,60 @@
+#width-wrapper{ 
+  .mc4wp-notice,
+  .mc4wp-error{
+    color: #E42D27;
+  }
+  .mc4wp-success{
+    color: #00800e;
+  }
+  .addthis_counter.addthis_pill_style{
+     a.addthis_button_expanded{
+      width: 39px !important;
+    }
+  }
+  .music-post-wrapper,
+  .news-post-wrapper{ 
+    .addthis_default_style{ 
+      .at300b, 
+      .at300bo, 
+      .at300m{
+        width: @addthis-width-icon;
+      }
+    }
+  }
+  .news-post-wrapper, 
+  .music-post-wrapper{
+    .addthis_toolbox{
+      width: @addthis-width;
+    }
+  }
+  #mc4wp_email{
+    width: 300px;
+  }
+  #youtube-video{
+    position: @relative;
+    a img{
+      max-width: 100%;
+      max-height: 270px;
+    }
+    .play-button{
+      font-size: 70px;
+      position: @absolute;
+      left: 190px;
+      top: 100px;
+      color: rgba(0, 0, 0, .7);
+      &:hover {
+        opacity: 1;
+        color: @black;
+      }
+    }
+    .caption{ 
+      p{
+        background: rgba(0, 0, 0, .7);
+        position: @absolute;
+        top:25px;
+        left:0;
+        padding:5px 15px 5px 15px;
+      }
+    }
+  }
+}

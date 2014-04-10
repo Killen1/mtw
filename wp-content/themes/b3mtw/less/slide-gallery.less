@@ -1,0 +1,58 @@
+.main-logo{ 
+  a{
+    position: @position-absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 7;
+    background: url(/wordpress/wp-content/themes/b3mtw/images/mtw-logo.png) no-repeat;
+    width: 200px;
+    height: 207px;
+  }
+  @media (max-width: @screen-sm) {
+      a{
+        background: url(/wordpress/wp-content/themes/b3mtw/images/mtw-logo-sm.png) no-repeat;
+        width: 100px;
+        height: 107px;
+      }
+  }
+}
+#slider{
+    padding-top: 50%;
+    overflow: hidden;
+    img.slide{
+      height: auto;
+    }
+    .slide{
+      position: @position-absolute;
+      width: @slide-size;
+      height: @slide-size;
+      top: 0;
+      z-index: 1;
+    }
+  }
+  .controls{
+    .pager_list{
+      position: @position-absolute;
+      width: @slide-size;
+      bottom: 0;
+      left: 0;
+      z-index: 4;
+      li{
+        display: inline-block;
+        width: @pager-size;
+        height: @pager-size;
+        margin: 0 7px;
+        background: @pager-color;
+        opacity: 1;
+        text-indent: -999px;
+        border-radius: 999px;
+        cursor: pointer;
+        transition: all 150ms;
+        &:hover,
+        &.active {
+          opacity: 1;
+          background: @pager-color-hover;
+        }
+      }
+    }
+  }
