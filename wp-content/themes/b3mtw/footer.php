@@ -21,7 +21,6 @@
 					<li><a class="addthis_button_vimeo_follow" addthis:userid="MaynardandTheWalnut"><i class="fa fa-vimeo-square fa-lg"></i></a></li>
 					<li><a class="rss" href="<?php echo MTW_ROOT ?>feed" target="_blank" title="RSS Feed"><i class="fa fa-rss-square fa-lg"></i></a></li>
 				</ul>
-				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526da6b84c40c531"></script>
 			</div>
 		</div>
 	</div>
