@@ -5,7 +5,7 @@
  */
 //variables set for the site to use
  define( 'SITE_ROOT', get_option('home') . '/wp-content/themes/b3mtw/' );
- define( 'MTW_ROOT', 'http://localhost:8888/wordpress/' ); 
+ define( 'MTW_ROOT', 'http://dev.maynardandthewalnut.com' ); 
  define('SITE_HOME', get_option('home') );
 ?>
 <!DOCTYPE html>
