@@ -9,7 +9,7 @@ get_header(); ?>
 			<?php if($latest_news->have_posts()) : ?>
 				<?php while($latest_news->have_posts()) : ?>
 					<?php $latest_news->the_post(); ?>
-					<div class="latest-news col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<div class="latest-news col-xs-12 col-md-8 col-lg-8">
 						<div class="row">
 							<div class="col-sm-12">
 								<h2 class="padding-bottom-10 border-bottom">Latest News</h2>
@@ -34,9 +34,7 @@ get_header(); ?>
 									?>  
 								</h3>
 								<p><i class="fa fa-calendar"></i> <?php the_date();?></p>
-								<p>
-									<?php echo word_truncate_excerpt(55); ?>	
-								</p>
+								<p><?php echo word_truncate_excerpt(55); ?>	</p>
 								<h5><a href="<?php echo MTW_ROOT ?>news#<?php the_ID(); ?>" title="Read More">Read More <i class="fa fa-arrow-right"></i></a></h5>
 							</div>
 						</div>
@@ -44,7 +42,7 @@ get_header(); ?>
 				<?php endwhile;?>
 			<?php endif; ?>
 			<?php wp_reset_query(); ?>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="col-xs-12 col-md-4 col-lg-4">
 				<div class="gigpress-wrap">
 					<h2>Upcoming Shows</h2>
 					<?php if(gigpress_has_upcoming()) : ?>
@@ -107,7 +105,7 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-lg-7 margin-bottom-20 margin-top-20">
+						<div class="col-xs-12 col-lg-7 margin-bottom-20 margin-top-20">
 							<iframe id="sound-cloud" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/maynardandthewalnut" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
 						</div>
 					</div>

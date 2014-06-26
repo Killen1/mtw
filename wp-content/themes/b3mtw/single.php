@@ -7,8 +7,7 @@
 				<? if($counter == 0 ){?>
 					<div class="news-post-wrapper">
 						<div class="row">
-							<div class="col-sm-1"></div>
-							<div class="col-xs-12 col-sm-10">
+							<div class="col-xs-12 col-sm-offset-1 col-sm-10">
 								<div id="<?php the_ID(); ?>" class="post-wrapper margin-bottom-20">
 									<h2 class="text-center"><?php the_title(); ?></h2>
 									<p class="text-center"><i class="fa fa-calendar"></i> <?php the_date();?> | <?php the_author(); ?> </p>
@@ -36,7 +35,6 @@
 									<?php next_post_link('%link', '<div id="next-post" class="pull-left margin-bottom-20"><i class="fa fa-chevron-left fa-3"></i></div>', $excluded_categories = '3, 4') ?>
 								</div>
 							</div>
-							<div class="col-sm-1"></div>
 						</div>
 					</div>
 				<?}$counter++;?>

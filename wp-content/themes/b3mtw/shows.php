@@ -9,8 +9,7 @@ get_header(); ?>
 	<div class="bg-paper">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-1"></div>
-				<div class="col-xs-12 col-sm-10">
+				<div class="col-xs-12 col-sm-offset-1 col-sm-10">
 					<h1 class="text-center padding-bottom-10 border-bottom">Show Dates</h1>
 					<div class="row">
 						<div class="show-type col-xs-6">
@@ -44,7 +43,6 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-1"></div>
 			</div>
 		</div>
 	</div>
