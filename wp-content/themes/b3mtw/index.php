@@ -119,8 +119,7 @@ get_header(); ?>
 <script>
 	//This is for the Youtube Video popup
 	$('#youtube-video a').click(function () {
-    	//This is were you put the youtube video url It must be in this format to play --> http://www.youtube.com/v/<video_id>&amp;autoplay=1
-        var src = 'http://www.youtube.com/v/s5pyqt3z1-M&amp;autoplay=1';
+        var src = 'http://player.vimeo.com/video/93075064?&amp;autoplay';
       	$('#video-modal').modal('show');
         $('#video-modal iframe').attr('src', src);
     });
